@@ -178,7 +178,7 @@ font:
 # Color Scheme (Nord)
 colors:
   primary:
-    background: '#111111'
+    background: '#000000'
     foreground: '#d8dee9'
     dim_foreground: '#a5abb6'
   cursor:
