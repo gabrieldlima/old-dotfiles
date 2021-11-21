@@ -18,6 +18,9 @@ font pango:UbuntuMono-R 9
 # Set wallpaper
 exec --no-startup-id ~/.fehbg
 
+# Launch polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 
 # -----------------------------------------------------------------------------
 #                                 KEYBINDINGS
