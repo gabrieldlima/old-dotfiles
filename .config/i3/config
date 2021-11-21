@@ -130,12 +130,3 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+b exec --no-startup-id firefox
-
-# -----------------------------------------------------------------------------
-#                                STATUS BAR
-# -----------------------------------------------------------------------------
-# Start i3bar to display a workspace bar
-bar {
-        status_command i3status
-        position top
-}
