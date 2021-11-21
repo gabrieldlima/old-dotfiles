@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # In order to use gaps you need to disable window titlebars. This can be done by adding the following line to your config.
 for_window [class=".*"] border pixel 3
