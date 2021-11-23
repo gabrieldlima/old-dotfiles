@@ -2,7 +2,7 @@
 
 # Terminate already running bar instances
 killall -q polybar
-# Launch bar1 and bar2
+# Launch bar
 echo "---" | tee -a /tmp/polybar1.log 
 polybar example 2>&1 | tee -a /tmp/polybar1.log & disown
 
