@@ -98,10 +98,6 @@ label-urgent-padding = 2
 ; Separator in between workspaces
 ; label-separator = |
 
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
 [module/xbacklight]
 type = internal/xbacklight
 
