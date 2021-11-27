@@ -34,9 +34,6 @@ line-color = #f00
 
 border-size = 2
 
-padding-left = 0
-padding-right = 2
-
 module-margin-left = 1
 module-margin-right = 2
 
