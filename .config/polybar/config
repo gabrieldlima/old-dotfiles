@@ -21,7 +21,7 @@
 background = #2e3440
 foreground = #d8dde9
 
-[bar/example]
+[bar/mybar]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 27
