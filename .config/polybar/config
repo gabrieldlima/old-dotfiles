@@ -30,7 +30,7 @@ width = 100%
 height = 27
 radius = 10
 
-line-size = 3
+line-size = 2
 line-color = #f00
 
 border-size = 2
