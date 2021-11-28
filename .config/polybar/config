@@ -46,7 +46,7 @@ font-3 = Fira Code NF:size=12;1
 
 modules-left = bspwm i3
 modules-center = date
-modules-right = xbacklight alsa xkeyboard cpu memory eth battery temperature filesystem pulseaudio wlan powermenu
+modules-right = xbacklight alsa xkeyboard cpu memory eth battery temperature filesystem kernel pulseaudio wlan powermenu
 
 tray-position = center
 tray-padding = 10
@@ -99,6 +99,14 @@ label-muted = %{T2}%{T1}
 label-muted-underline = ${colors.foreground}
 label-muted-foreground = ${colors.foreground}
 click-right = pavucontrol
+
+[module/kernel]
+type = custom/script
+exec = uname -r
+tail = false
+interval = 1024
+label = %{T2}%{T1} %output%
+format-underline = ${colors.foreground}
 
 [module/date]
 type = internal/date
