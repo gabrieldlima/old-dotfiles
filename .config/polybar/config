@@ -45,8 +45,8 @@ font-2 = Fira Code NF:size=14;2
 font-3 = Fira Code NF:size=12;1
 
 modules-left = bspwm i3
-modules-center = mpd
-modules-right = xbacklight alsa xkeyboard cpu memory eth battery temperature filesystem pulseaudio wlan date powermenu
+modules-center = date
+modules-right = xbacklight alsa xkeyboard cpu memory eth battery temperature filesystem pulseaudio wlan powermenu
 
 tray-position = center
 tray-padding = 10
@@ -103,14 +103,10 @@ click-right = pavucontrol
 [module/date]
 type = internal/date
 interval = 1
-date =
-date-alt = " %Y-%m-%d"
-time = %H:%M
-time-alt = %H:%M:%S
-format-prefix = %{T3}%{T1} 
-format-prefix-foreground = ${colors.foreground}
-format-underline = ${colors.foreground}
-label = %date% %time%
+date = "%Y-%m-%d"
+time = %H:%M:%S
+label = %{T3}%{T1} %date% %{T3}%{T1} %time%
+label-underline = ${colors.foreground}
 
 [module/cpu]
 type = internal/cpu
