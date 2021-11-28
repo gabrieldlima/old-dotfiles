@@ -10,7 +10,7 @@ set $mod Mod4
 for_window [class=".*"] border pixel 3
 
 # Define gaps between windows 
-gaps inner 10
+gaps inner 8
 
 # Set default system font
 font pango:UbuntuMono-R 9
