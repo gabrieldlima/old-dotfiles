@@ -39,7 +39,8 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = Fira Code NF:size=10;1
-font-1 = Fura Code NF:size=18;3
+font-1 = Fira Code NF:size=18;3
+font-2 = Fira Code NF:size=14;2
 
 modules-left = bspwm i3
 modules-center = mpd
@@ -105,16 +106,17 @@ label-urgent-font = 2
 
 [module/date]
 type = internal/date
-interval = 1
+interval = 5
 
+date =
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 祥
-format-prefix-foreground = ${colors.foreground}
-format-underline = ${colors.foreground}
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #0a6cf5
 
 label = %date% %time%
 
