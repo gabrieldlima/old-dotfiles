@@ -46,7 +46,7 @@ font-3 = Fira Code NF:size=12;1
 
 modules-left = bspwm i3
 modules-center = mpd
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard cpu memory wlan eth battery temperature date powermenu
+modules-right = xbacklight alsa pulseaudio xkeyboard cpu memory wlan eth battery temperature filesystem date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -133,6 +133,14 @@ thermal-zone = 0
 hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input
 label = %{T4}%{T1} %temperature-c%
 label-underline = ${colors.foreground}
+
+[module/filesystem]
+type = internal/fs
+interval = 10
+mount-0 = /
+label-mounted =%{T3}%{T1} %percentage_used%% 
+format-mounted-underline = ${colors.foreground}
+fixed-values = true
 
 [module/powermenu]
 type = custom/menu
