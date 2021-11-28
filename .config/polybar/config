@@ -37,7 +37,7 @@ line-color = #f00
 border-size = 2
 
 module-margin-left = 1
-module-margin-right = 1
+module-margin-right = 2
 
 font-0 = Fira Code NF:size=10;1
 font-1 = Fira Code NF:size=18;3
@@ -46,7 +46,7 @@ font-3 = Fira Code NF:size=12;1
 
 modules-left = bspwm i3
 modules-center = mpd
-modules-right = xbacklight alsa pulseaudio xkeyboard cpu memory wlan eth battery temperature filesystem date powermenu
+modules-right = xbacklight alsa pulseaudio xkeyboard cpu memory eth battery temperature filesystem date wlan powermenu
 
 tray-position = right
 tray-padding = 2
@@ -141,6 +141,14 @@ mount-0 = /
 label-mounted =%{T3}%{T1} %percentage_used%% 
 format-mounted-underline = ${colors.foreground}
 fixed-values = true
+
+[module/wlan]
+type = internal/network
+interface = wlo1
+interval = 1.0
+label-connected = %{T3}直%{T1} %downspeed:%
+label-disconnected =%{T3}睊%{T1} disconnected
+format-connected-underline = ${colors.foreground}
 
 [module/powermenu]
 type = custom/menu
