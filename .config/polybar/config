@@ -46,7 +46,7 @@ font-3 = Fira Code NF:size=12;1
 
 modules-left = bspwm i3
 modules-center = mpd
-modules-right = xbacklight alsa pulseaudio xkeyboard cpu memory eth battery temperature filesystem wlan date powermenu
+modules-right = xbacklight alsa xkeyboard cpu memory eth battery temperature filesystem pulseaudio wlan date powermenu
 
 tray-position = center
 tray-padding = 10
@@ -89,6 +89,16 @@ label-urgent = %icon%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 label-urgent-font = 2
+
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 5
+label-volume = %{T3}%{T1} %percentage%%
+label-volume-underline = ${colors.foreground}
+label-muted = %{T2}%{T1}
+label-muted-underline = ${colors.foreground}
+label-muted-foreground = ${colors.foreground}
+click-right = pavucontrol
 
 [module/date]
 type = internal/date
