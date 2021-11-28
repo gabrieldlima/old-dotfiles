@@ -44,7 +44,7 @@ font-2 = Fira Code NF:size=14;2
 
 modules-left = bspwm i3
 modules-center = mpd
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem xbacklight alsa pulseaudio xkeyboard cpu memory wlan eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -124,6 +124,12 @@ label = %date% %time%
 type = internal/cpu
 interval = 1.0
 label = %{T3}%{T1} %percentage%%
+label-underline = ${colors.foreground}
+
+[module/memory]
+type = internal/memory
+interval = 1.0
+label = %{T3}%{T1} %gb_used%
 label-underline = ${colors.foreground}
 
 [module/powermenu]
