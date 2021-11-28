@@ -46,7 +46,7 @@ font-3 = Fira Code NF:size=12;1
 
 modules-left = bspwm i3
 modules-center = date
-modules-right = xbacklight alsa xkeyboard cpu memory eth battery temperature filesystem kernel pulseaudio wlan powermenu
+modules-right = xbacklight alsa xkeyboard wlan cpu memory eth battery temperature filesystem kernel pulseaudio powermenu
 
 tray-position = center
 tray-padding = 10
@@ -148,7 +148,7 @@ fixed-values = true
 type = internal/network
 interface = wlo1
 interval = 1.0
-label-connected = %{T3}直%{T1} %essid%
+label-connected = %{T3}直%{T1} %downspeed%
 label-disconnected =%{T3}睊%{T1} %essid%
 format-connected-underline = ${colors.foreground}
 
