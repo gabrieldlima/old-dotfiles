@@ -133,5 +133,5 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 #                             START APPLICATIONS 
 # -----------------------------------------------------------------------------
 bindsym $mod+Return exec --no-startup-id alacritty
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show run
 bindsym $mod+b exec --no-startup-id firefox
