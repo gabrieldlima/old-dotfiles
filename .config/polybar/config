@@ -17,10 +17,10 @@
 ;==========================================================
 
 [colors]
-; NORD
-background = #2e3440
-foreground = #d8dde9
-background-alt = #4c566a
+; COLOR THEME
+background = #21262d
+foreground = #f0f6fc
+background-alt = #6e7681
 
 [bar/mybar]
 background = ${colors.background}
@@ -28,15 +28,13 @@ foreground = ${colors.foreground}
 
 width = 100%
 height = 27
-radius = 10
+radius = 0
 padding-right = 2 
 
-line-size = 2
+line-size = 1
 line-color = #f00
 
 separator = 
-
-border-size = 2
 
 module-margin-left = 1
 module-margin-right = 1
