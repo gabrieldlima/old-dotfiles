@@ -97,13 +97,13 @@ label-muted-underline = ${colors.foreground}
 label-muted-foreground = ${colors.foreground}
 click-right = pavucontrol
 
-[module/kernel]
-type = custom/script
-exec = uname -r
-tail = false
-interval = 1024
-label = %{T2}%{T1} %output%
-format-underline = ${colors.foreground}
+;[module/kernel]
+;type = custom/script
+;exec = uname -r
+;tail = false
+;interval = 1024
+;label = %{T2}%{T1} %output%
+;format-underline = ${colors.foreground}
 
 [module/date]
 type = internal/date
