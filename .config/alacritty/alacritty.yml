@@ -326,13 +326,13 @@ colors:
 # The value `0.0` is completely transparent and `1.0` is opaque.
 background_opacity: 0.85
 
-#selection:
+selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
-  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  #save_to_clipboard: false
+  save_to_clipboard: true
 
 cursor:
   # Cursor style
