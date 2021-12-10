@@ -24,7 +24,7 @@ configuration {
 window {
     border: 						0px;
     border-color: 					@ac;
-    border-radius: 					6px;
+    border-radius: 					0px;
     padding: 						15;
     width: 							20%;
 }
