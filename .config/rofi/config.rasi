@@ -1,24 +1,24 @@
 configuration {
-    font:    "Fira Code NF 12";
-    fixed-num-lines:    true;
-    show-icons:    false;
-    sidebar-mode:    true;
+    font:                                               "Fira Code NF 12";
+    fixed-num-lines:                                    true;
+    show-icons:    					false;
+    sidebar-mode:    					true;
     scroll-method: 					0;
     window-format: 					"[{w}] ··· {c} ···   {t}";
     click-to-exit: 					true;
-    combi-hide-mode-prefix: 		false;
-    display-window:    "";
-    display-windowcd:    "";
-    display-run:    "";
-    display-ssh:    "";
-    display-drun:    "";
-    display-combi:    "";
+    combi-hide-mode-prefix: 				false;
+    display-window:    					"";
+    display-windowcd:    				"";
+    display-run:    					"";
+    display-ssh:    					"";
+    display-drun:    					"";
+    display-combi:    					"";
 }
 
 @import "themes/black.rasi"
 
 * {
-    background-color:             	@bg;
+    background-color:             			@bg;
 }
 
 window {
@@ -26,7 +26,7 @@ window {
     border-color: 					@ac;
     border-radius: 					0px;
     padding: 						15;
-    width: 							30%;
+    width: 						30%;
 }
 
 prompt {
@@ -37,8 +37,8 @@ prompt {
 
 textbox-prompt-colon {
     expand: 						false;
-    str: 							" ";
-    margin:							0px 4px 0px 0px;
+    str: 					        " ";
+    margin:						0px 4px 0px 0px;
     text-color: 					inherit;
 }
 
@@ -66,7 +66,7 @@ mainbox {
 }
 
 listview {
-    lines:							6;
+    lines:						6;
     columns:						1;
     fixed-height: 					0;
     border: 						0px;
@@ -87,40 +87,40 @@ element {
     padding: 						5px;
 }
 element normal.normal {
-    background-color: 				@bg;
-    text-color:       				@fg;
+    background-color: 					@bg;
+    text-color:       					@fg;
 }
 element normal.urgent {
-    background-color: 				@bg;
-    text-color:       				@red;
+    background-color: 					@bg;
+    text-color:       					@red;
 }
 element normal.active {
-    background-color: 				@green;
-    text-color:       				@bg;
+    background-color: 					@green;
+    text-color:       					@bg;
 }
 element selected.normal {
-    background-color: 				@fg;
-    text-color:       				@bg;
+    background-color: 					@fg;
+    text-color:       					@bg;
 }
 element selected.urgent {
-    background-color: 				@bg;
-    text-color:       				@red;
+    background-color: 					@bg;
+    text-color:       					@red;
 }
 element selected.active {
-    background-color: 				@fg;
-    text-color:       				@bg;
+    background-color: 					@fg;
+    text-color:       					@bg;
 }
 element alternate.normal {
-    background-color: 				@bg;
-    text-color:       				@fg;
+    background-color: 					@bg;
+    text-color:       					@fg;
 }
 element alternate.urgent {
-    background-color: 				@bg;
-    text-color:       				@fg;
+    background-color: 					@bg;
+    text-color:       					@fg;
 }
 element alternate.active {
-    background-color: 				@bg;
-    text-color:       				@fg;
+    background-color: 					@bg;
+    text-color:       					@fg;
 }
 
 sidebar {
@@ -130,9 +130,9 @@ sidebar {
 }
 
 button {
-    horizontal-align:               0.5;
-    vertical-align:                 0.5;
-    background-color:             	@fg;
+    horizontal-align:               			0.5;
+    vertical-align:                 			0.5;
+    background-color:             			@fg;
     margin: 						5px;
     padding: 						5px;
     text-color: 					@bg;
@@ -142,7 +142,7 @@ button {
 }
 
 button selected {
-    background-color:             	@ac;
+    background-color:             			@ac;
     text-color: 					@fg;
     border: 						0px;
     border-radius: 					4px;
