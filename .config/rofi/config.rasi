@@ -7,12 +7,12 @@ configuration {
     window-format: 					"[{w}] ··· {c} ···   {t}";
     click-to-exit: 					true;
     combi-hide-mode-prefix: 				false;
-    display-window:    					"";
-    display-windowcd:    				"";
-    display-run:    					"";
+    display-window:    					"";
+    display-windowcd:    				"";
+    display-run:    					"";
     display-ssh:    					"";
-    display-drun:    					"";
-    display-combi:    					"";
+    display-drun:    					"";
+    display-combi:    					"";
 }
 
 @import "themes/black.rasi"
