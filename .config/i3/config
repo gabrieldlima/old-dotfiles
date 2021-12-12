@@ -13,7 +13,7 @@ for_window [class=".*"] border pixel 3
 gaps inner 8
 
 # Set default system font
-font pango:UbuntuMono-R 9
+font pango:FiraCode NF 12
 
 # Set wallpaper
 exec --no-startup-id ~/.fehbg
