@@ -21,8 +21,13 @@ exec --no-startup-id ~/.fehbg
 # Launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# Nord color scheme
-client.focused #81a1c1 #81a1c1 #81a1c1 #81a1c1 #81a1c1
+# class                 border  backgr. text    indicator child_border
+client.focused          #6e7681 #6e7681 #6e7681 #6e7681   #6e7681
+client.focused_inactive #0d1117 #0d1117 #0d1117 #0d1117   #0d1117
+client.unfocused        #0d1117 #0d1117 #0d1117 #0d1117   #0d1117
+client.urgent           #0d1117 #0d1117 #0d1117 #0d1117   #0d1117
+client.placeholder      #0d1117 #0d1117 #0d1117 #0d1117   #0d1117
+
 
 # -----------------------------------------------------------------------------
 #                                 KEYBINDINGS
