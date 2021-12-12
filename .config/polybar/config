@@ -56,17 +56,16 @@ type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
-;       ﱘ 
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;ﱘ
-ws-icon-6 = 7;
-ws-icon-7 = 8;ﭮ
-ws-icon-8 = 9;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;歷
+ws-icon-5 = 6;
+ws-icon-6 = 7;ﱘ
+ws-icon-7 = 8;
+ws-icon-8 = 9;﨧
 ws-icon-default = 
 
 label-focused = %icon%
