@@ -2,17 +2,17 @@ configuration {
     font:                                               "Fira Code NF 12";
     fixed-num-lines:                                    true;
     show-icons:    					false;
-    sidebar-mode:    					true;
+    sidebar-mode:    					false;
     scroll-method: 					0;
     window-format: 					"[{w}] ··· {c} ···   {t}";
     click-to-exit: 					true;
     combi-hide-mode-prefix: 				false;
-    display-window:    					"";
-    display-windowcd:    				"";
-    display-run:    					"";
-    display-ssh:    					"";
-    display-drun:    					"";
-    display-combi:    					"";
+    display-window:    					" window:";
+    display-windowcd:    				" window:";
+    display-run:    					" run:";
+    display-ssh:    					" ssh:";
+    display-drun:    					" drun:";
+    display-combi:    					" combi";
 }
 
 @import "themes/black.rasi"
