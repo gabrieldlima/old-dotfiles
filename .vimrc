@@ -8,3 +8,6 @@ set nu
 set nowrap
 set noswapfile
 set nobackup
+
+call plug#begin('~/.vim/plugged')
+call plug#end()
