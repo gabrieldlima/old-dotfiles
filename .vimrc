@@ -6,3 +6,5 @@ set expandtab
 set smartindent
 set nu
 set nowrap
+set noswapfile
+set nobackup
