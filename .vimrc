@@ -5,3 +5,4 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set nu
+set nowrap
