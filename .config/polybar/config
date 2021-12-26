@@ -124,7 +124,7 @@ label-underline = ${colors.foreground}
 [module/memory]
 type = internal/memory
 interval = 1.0
-label = %{T3}%{T1} %gb_used%
+label = %{T3}%{T1} %percentage_used%%
 label-underline = ${colors.foreground}
 
 [module/temperature]
