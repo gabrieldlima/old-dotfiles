@@ -13,7 +13,7 @@ for_window [class=".*"] border pixel 3
 gaps inner 10
 
 # Set default system font
-font pango:FiraCode NF 12
+font pango:Fira Code 12
 
 # Launch picom compositor
 exec --no-startup-id picom --experimental-backends
