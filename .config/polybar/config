@@ -52,7 +52,7 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 2
 
-modules-left = i3
+modules-left = i3 window
 modules-center = date
 modules-right = netspeed wlan pacman-updates pulseaudio powermenu
 
@@ -105,6 +105,15 @@ label-urgent = %icon%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 label-urgent-font = 2
+
+
+;------------------------------------------------------------------------------
+[module/window]
+type = custom/script
+interval = 0
+exec = ~/.config/polybar/scripts/xwindow.sh
+label =  %output%
+
 
 ;------------------------------------------------------------------------------
 [module/netspeed]
