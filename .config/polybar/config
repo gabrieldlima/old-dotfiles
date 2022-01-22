@@ -54,7 +54,7 @@ module-margin-right = 2
 
 modules-left = i3 window
 modules-center = date
-modules-right = netspeed wlan pacman-updates pulseaudio powermenu
+modules-right = netspeed wlan pulseaudio powermenu
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -130,14 +130,6 @@ interface = wlo1
 interval = 1.0
 label-connected = %{T3}直%{T1} UP
 label-disconnected = %{T3}睊%{T1} DOWN
-
-
-;------------------------------------------------------------------------------
-[module/pacman-updates]
-type = custom/script
-exec = pacman -Qu | wc -l
-interval = 1000
-label = %{T3}%{T1} %output%
 
 
 ;------------------------------------------------------------------------------
