@@ -128,8 +128,8 @@ label-connected = %{T3}%{T1} %downspeed% %{T3}%{T1} %upspeed%
 type = internal/network
 interface = wlo1
 interval = 1.0
-label-connected = %{T3}直%{T1} UP
-label-disconnected = %{T3}睊%{T1} DOWN
+label-connected = %{T3}直%{T1} 
+label-disconnected = %{T3}睊%{T1}
 
 
 ;------------------------------------------------------------------------------
