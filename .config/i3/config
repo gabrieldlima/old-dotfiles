@@ -8,7 +8,10 @@ set $mod Mod4
 for_window [class=".*"] border pixel 3
 
 # Define gaps between windows 
-gaps inner 10
+gaps inner 15
+gaps outer 0
+gaps top -10
+gaps bottom 0
 
 # Set default system font
 font pango:Fira Code 12
