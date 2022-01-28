@@ -14,13 +14,8 @@
 ;==============================================================================
 
 [colors]
-background = #aa000000
-background-alt = #444
-foreground = #f0f6fc
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+background = #bb000000
+foreground = #ffffff
 
 
 ;==============================================================================
@@ -54,7 +49,7 @@ module-margin-right = 2
 
 modules-left = i3 title
 modules-center = 
-modules-right = netspeed wlan updates pulseaudio date
+modules-right = wlan updates pulseaudio date
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -81,19 +76,15 @@ ws-icon-7 = 8;﨧
 ws-icon-8 = 9;歷
 ws-icon-default = 
 
-label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
-
 label-focused = %icon%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
 label-focused-font = 2
+label-focused-padding = 2
+label-focused-background = ${colors.background}
+label-focused-underline= ${colors.foreground}
 
 label-unfocused = %icon%
-label-unfocused-padding = 2
 label-unfocused-font = 2
+label-unfocused-padding = 2
 
 label-visible = %icon%
 label-visible-background = ${self.label-focused-background}
@@ -115,20 +106,12 @@ label-maxlen = 65
 
 
 ;------------------------------------------------------------------------------
-[module/netspeed]
-type = internal/network
-interface = wlo1
-interval = 1.0
-label-connected = %{T3}%{T1} %downspeed% %{T3}%{T1} %upspeed%
-
-
-;------------------------------------------------------------------------------
 [module/wlan]
 type = internal/network
 interface = wlo1
 interval = 1.0
-label-connected = %{T3}直%{T1} UP
-label-disconnected = %{T3}睊%{T1} DOWN
+label-connected = %{T3}直%{T1} %downspeed%
+label-disconnected = %{T3}睊%{T1} %essid%
 
 
 ;------------------------------------------------------------------------------
