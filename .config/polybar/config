@@ -47,7 +47,7 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 2
 
-modules-left = i3 title
+modules-left = i3
 modules-center = 
 modules-right = wlan updates pulseaudio date
 
@@ -96,13 +96,6 @@ label-urgent = %icon%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 label-urgent-font = 2
-
-
-;------------------------------------------------------------------------------
-[module/title]
-type = internal/xwindow
-label =  %title%
-label-maxlen = 65
 
 
 ;------------------------------------------------------------------------------
