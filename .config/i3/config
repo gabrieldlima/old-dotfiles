@@ -5,7 +5,7 @@
 set $mod Mod4
 
 # Disable window titlebars
-for_window [class=".*"] border pixel 3
+for_window [class=".*"] border pixel 2
 
 # Define gaps between windows 
 gaps inner 15
@@ -24,6 +24,9 @@ exec --no-startup-id ~/.fehbg
 
 # Launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Theme
+include ~/.config/i3/gruvbox.conf
 
 
 #==============================================================================
