@@ -23,7 +23,7 @@ exec --no-startup-id picom
 exec --no-startup-id ~/.fehbg
 
 # Launch polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launcher.sh
 
 # Theme
 include ~/.config/i3/themes/gruvbox.conf
