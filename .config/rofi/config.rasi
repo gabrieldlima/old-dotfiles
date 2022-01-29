@@ -1,6 +1,6 @@
 configuration {
 /*	modi: "window,run,ssh";*/
-/*	font: "mono 12";*/
+    font: "Fira Code 11";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -144,3 +144,5 @@ configuration {
       sorting-method:    "name";
   }
 }
+
+@theme "~/.config/rofi/themes/gruvbox-dark.rasi"
