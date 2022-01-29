@@ -9,16 +9,8 @@
 ;==============================================================================
 
 
-;==============================================================================
-;                                   THEMES
-;==============================================================================
-
-[colors]
-;GRUVBOX DARK
-background =     #ee1d2021
-foreground =     #fbf1c7
-background-alt = #504945
-foreground-alt = #ebdbb2
+include-file = ~/.config/polybar/modules
+include-file = ~/.config/polybar/themes/gruvbox
 
 
 ;==============================================================================
@@ -56,81 +48,3 @@ modules-right = wlan updates pulseaudio date
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-
-;==============================================================================
-;                                   MODULES
-;==============================================================================
-
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-index-sort = true
-wrapping-scroll = false
-
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;ﱘ
-ws-icon-6 = 7;
-ws-icon-7 = 8;﨧
-ws-icon-8 = 9;歷
-ws-icon-default = 
-
-label-focused = %icon%
-label-focused-font = 2
-label-focused-padding = 2
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.foreground-alt}
-
-label-unfocused = %icon%
-label-unfocused-font = 2
-label-unfocused-padding = 2
-
-label-visible = %icon%
-label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
-label-visible-padding = ${self.label-focused-padding}
-label-visible-font = 2
-
-label-urgent = %icon%
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
-label-urgent-font = 2
-
-
-;------------------------------------------------------------------------------
-[module/wlan]
-type = internal/network
-interface = wlo1
-interval = 1.0
-label-connected = %{T3}直%{T1} %downspeed%
-label-disconnected = %{T3}睊%{T1} %essid%
-
-
-;------------------------------------------------------------------------------
-[module/updates]
-type = custom/script
-exec = ~/.config/polybar/scripts/updates.sh
-interval = 600
-label = %{T3}%{T1} %output%
-
-
-;------------------------------------------------------------------------------
-[module/pulseaudio]
-type = internal/pulseaudio
-interval = 5
-label-volume = %{T3}墳%{T1} %percentage%%
-label-muted = %{T3}婢%{T1} Muted
-click-right = pavucontrol
-
-
-;------------------------------------------------------------------------------
-[module/date]
-type = internal/date
-interval = 1
-date = "%a, %b %d "
-time = %H:%M
-label = %{T3}%{T1} %date% %{T3}%{T1} %time%
