@@ -26,7 +26,7 @@ exec --no-startup-id ~/.fehbg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Theme
-include ~/.config/i3/gruvbox.conf
+include ~/.config/i3/themes/gruvbox.conf
 
 
 #==============================================================================
