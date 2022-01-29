@@ -14,8 +14,11 @@
 ;==============================================================================
 
 [colors]
-background = #bb000000
-foreground = #ffffff
+;GRUVBOX DARK
+background =     #ee1d2021
+foreground =     #fbf1c7
+background-alt = #504945
+foreground-alt = #ebdbb2
 
 
 ;==============================================================================
@@ -79,8 +82,8 @@ ws-icon-default = 
 label-focused = %icon%
 label-focused-font = 2
 label-focused-padding = 2
-label-focused-background = ${colors.background}
-label-focused-underline= ${colors.foreground}
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.foreground-alt}
 
 label-unfocused = %icon%
 label-unfocused-font = 2
