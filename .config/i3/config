@@ -138,7 +138,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 #                             START APPLICATIONS 
 #==============================================================================
 bindsym $mod+Return exec --no-startup-id kitty
-bindsym $mod+d exec --no-startup-id ~/.config/rofi/launcher.sh
+bindsym $mod+d exec --no-startup-id ~/.config/rofi/scripts/launcher.sh
 bindsym $mod+b exec --no-startup-id brave
 
 # Workspace 1
