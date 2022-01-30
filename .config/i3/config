@@ -153,6 +153,9 @@ for_window [class="Brave-browser"] move to workspace $ws3
 # Workspace 5
 for_window [class="Thunderbird"] move to workspace $ws5
 
+# Workspace 6
+for_window [class="Spotify"] move to workspace $ws6
+
 # Workspace 7
 for_window [class="Steam"] move to workspace $ws7
 
