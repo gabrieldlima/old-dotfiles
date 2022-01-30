@@ -9,8 +9,8 @@
 ;==============================================================================
 
 
-include-file = ~/.config/polybar/modules
 include-file = ~/.config/polybar/themes/gruvbox
+include-directory = ~/.config/polybar/modules
 
 
 ;==============================================================================
