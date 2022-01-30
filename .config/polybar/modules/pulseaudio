@@ -1,0 +1,6 @@
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 5
+label-volume = %{T3}墳%{T1} %percentage%%
+label-muted = %{T3}婢%{T1} Muted
+click-right = pavucontrol

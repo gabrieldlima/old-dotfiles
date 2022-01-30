@@ -1,0 +1,6 @@
+[module/date]
+type = internal/date
+interval = 1
+date = "%a, %b %d "
+time = %H:%M
+label = %{T3}%{T1} %date% %{T3}%{T1} %time%
