@@ -145,6 +145,11 @@ bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/scripts/launcher.sh
 bindsym $mod+b exec --no-startup-id brave
 
+# Open specific applications in floating mode
+for_window [class="openrgb"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="Pavucontrol"] floating enable
+
 # Open applications on specific workspaces
 for_window [class="Brave-browser"] move to workspace $ws3
 
