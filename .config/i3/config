@@ -1,70 +1,28 @@
-#==============================================================================
-#                                 BASIC SETUP
-#==============================================================================
+# Color theme
+include ~/.config/i3/themes/gruvbox.conf
+
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
+# Set default system font
+font pango:Fira Code 12
+
+
+#==============================================================================
+#                         CONTAINERS / WINDOWS
+#==============================================================================
 # Disable window titlebars
 for_window [class=".*"] border pixel 1
+
+# Border
+default_border none
+default_floating_border none
 
 # Define gaps between windows 
 gaps inner 15
 gaps outer 0
 gaps top -10
 gaps bottom 0
-
-# Set default system font
-font pango:Fira Code 12
-
-# Launch picom compositor
-exec --no-startup-id picom
-
-# Set wallpaper
-exec --no-startup-id ~/.fehbg
-
-# Launch polybar
-exec_always --no-startup-id $HOME/.config/polybar/scripts/launcher.sh
-
-# Theme
-include ~/.config/i3/themes/gruvbox.conf
-
-# Border
-default_border none
-default_floating_border none
-
-
-#==============================================================================
-#                                 KEYBINDINGS
-#==============================================================================
-# Change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
-# Change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
-
-# Move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
-
-# Resize window 
-mode "resize" {
-        bindsym l resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym h resize grow width 10 px or 10 ppt
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-bindsym $mod+r mode "resize"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -100,9 +58,39 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec \
 "i3-nagbar -t warning -m 'Do you really want to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'"
 
+# Change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Resize window 
+mode "resize" {
+        bindsym l resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym h resize grow width 10 px or 10 ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+bindsym $mod+r mode "resize"
+
 
 #==============================================================================
-#                                  WORKSPACES 
+#                             WORKSPACES 
 #==============================================================================
 # Define names for default workspaces 
 set $ws1 "1"
@@ -143,11 +131,15 @@ bindsym $mod+Ctrl+h workspace prev
 
 
 #==============================================================================
-#                             START APPLICATIONS 
+#                             APPLICATIONS 
 #==============================================================================
+exec --no-startup-id picom
+exec --no-startup-id ~/.fehbg
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launcher.sh
+
+bindsym $mod+b exec --no-startup-id brave
 bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/scripts/launcher.sh
-bindsym $mod+b exec --no-startup-id brave
 
 # Open specific applications in floating mode
 for_window [class="openrgb"] floating enable
