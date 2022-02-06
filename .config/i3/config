@@ -12,7 +12,7 @@ font pango:Fira Code 12
 #                         CONTAINERS / WINDOWS
 #==============================================================================
 # Disable window titlebars
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 2
 
 # Border
 default_border none
