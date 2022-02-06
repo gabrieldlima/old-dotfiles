@@ -8,3 +8,5 @@ set nu
 set relativenumber
 set nohlsearch
 set nowrap
+set noswapfile
+set nobackup
