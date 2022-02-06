@@ -9,7 +9,3 @@ set nowrap
 set noswapfile
 set nobackup
 set laststatus=2
-
-call plug#begin('~/.vim/plugged')
-Plug 'itchyny/lightline.vim'
-call plug#end()
