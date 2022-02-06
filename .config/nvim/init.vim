@@ -11,3 +11,4 @@ set nohlsearch
 set nowrap
 set noswapfile
 set nobackup
+set scrolloff=8
