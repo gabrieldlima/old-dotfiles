@@ -16,6 +16,7 @@ set scrolloff=8
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'
 Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 colorscheme gruvbox
