@@ -12,3 +12,7 @@ set nowrap
 set noswapfile
 set nobackup
 set scrolloff=8
+
+call plug#begin()
+
+call plug#end()
