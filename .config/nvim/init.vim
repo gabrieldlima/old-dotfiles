@@ -6,6 +6,7 @@ set shiftwidth=4
 set expandtab
 set nu
 set relativenumber
+set incsearch
 set nohlsearch
 set nowrap
 set noswapfile
