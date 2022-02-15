@@ -1,5 +1,5 @@
 # Color theme
-include ~/.config/i3/themes/gruvbox.conf
+include ~/.config/i3/themes/nord.conf
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
