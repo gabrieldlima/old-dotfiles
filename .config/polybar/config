@@ -9,7 +9,7 @@
 ;==============================================================================
 
 
-include-file = ~/.config/polybar/themes/gruvbox
+include-file = ~/.config/polybar/themes/nord
 include-directory = ~/.config/polybar/modules
 
 
