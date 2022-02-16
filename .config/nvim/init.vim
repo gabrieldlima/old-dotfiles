@@ -14,10 +14,10 @@ set nobackup
 set scrolloff=8
 
 call plug#begin()
-Plug 'gruvbox-community/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 colorscheme gruvbox
