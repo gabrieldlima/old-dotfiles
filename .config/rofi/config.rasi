@@ -145,4 +145,4 @@ configuration {
   }
 }
 
-@theme "~/.config/rofi/themes/gruvbox-dark.rasi"
+@theme "~/.config/rofi/themes/gruvbox.rasi"
