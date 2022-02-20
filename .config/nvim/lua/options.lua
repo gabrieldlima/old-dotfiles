@@ -12,3 +12,5 @@ o.shiftwidth = 4
 -- Convert tabs to spaces
 o.expandtab = true
 
+-- Set numbered lines
+o.number = true
