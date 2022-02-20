@@ -29,3 +29,6 @@ o.backup = false
 
 -- Creates a swap file
 o.swapfile = false
+
+-- Minimal number of lines to scroll when the cursor gets off the screen
+o.scrolloff = 8
