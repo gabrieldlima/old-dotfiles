@@ -17,3 +17,6 @@ o.number = true
 
 -- Set relative numbered lines
 o.relativenumber = true
+
+-- Highlight all matches on previous search pattern
+o.hlsearch = false
