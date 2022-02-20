@@ -23,3 +23,6 @@ o.hlsearch = false
 
 -- Display lines as one long line
 o.wrap = false
+
+-- Creates a backup file
+o.backup = false
