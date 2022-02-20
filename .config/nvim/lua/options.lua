@@ -6,4 +6,5 @@ o.syntax = "on"
 -- Insert 4 spaces for a tab
 o.tabstop = 4
 
-
+-- The number of spaces inserted for each indentation
+o.shiftwidth = 4
