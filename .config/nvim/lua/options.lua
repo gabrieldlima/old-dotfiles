@@ -20,3 +20,6 @@ o.relativenumber = true
 
 -- Highlight all matches on previous search pattern
 o.hlsearch = false
+
+-- Display lines as one long line
+o.wrap = false
