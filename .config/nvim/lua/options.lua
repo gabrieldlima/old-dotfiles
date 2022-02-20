@@ -14,3 +14,6 @@ o.expandtab = true
 
 -- Set numbered lines
 o.number = true
+
+-- Set relative numbered lines
+o.relativenumber = true
