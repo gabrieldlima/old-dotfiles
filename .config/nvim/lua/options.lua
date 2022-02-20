@@ -32,3 +32,6 @@ o.swapfile = false
 
 -- Minimal number of lines to scroll when the cursor gets off the screen
 o.scrolloff = 8
+
+-- Set term GUI colors
+o.termguicolors = true
