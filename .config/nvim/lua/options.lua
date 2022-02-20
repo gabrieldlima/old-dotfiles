@@ -26,3 +26,6 @@ o.wrap = false
 
 -- Creates a backup file
 o.backup = false
+
+-- Creates a swap file
+o.swapfile = false
