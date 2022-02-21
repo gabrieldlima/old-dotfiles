@@ -1,35 +1,37 @@
 return require("packer").startup(function()
 
-  -- Packer: a plugin manager for Neovim
-  use 'wbthomason/packer.nvim'
-  
-  -- Lualine: a statusline plugin written in pure lua
-  use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+    -- Packer: a plugin manager for Neovim
+    use { 
+        'wbthomason/packer.nvim'
+    }
 
-  -- Nvim-Tree: a file explorer tree for neovim written in lua
-  use {
-      'kyazdani42/nvim-tree.lua',
-      requires = { 'kyazdani42/nvim-web-devicons' },
-      config = function() require'nvim-tree'.setup {} end
-  }
+    -- Lualine: a statusline plugin written in pure lua
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
 
-  -- Nvim-Treesitter
-  use {
-      'nvim-treesitter/nvim-treesitter',
-      run = ':TSUpdate'
-  }
-  
-  -- Nvim-TSRainbow: rainbow parentheses for neovim using tree-sitter
-  use {
-    'p00f/nvim-ts-rainbow'
-  }
+    -- Nvim-Tree: a file explorer tree for neovim written in lua
+    use {
+        'kyazdani42/nvim-tree.lua',
+        requires = { 'kyazdani42/nvim-web-devicons' },
+        config = function() require'nvim-tree'.setup {} end
+    }
 
-  -- Nvim-Autopairs: autopairs for neovim written by lua
-  use { 
-    'windwp/nvim-autopairs'
-  }
+    -- Nvim-Treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+
+    -- Nvim-TSRainbow: rainbow parentheses for neovim using tree-sitter
+    use {
+        'p00f/nvim-ts-rainbow'
+    }
+
+    -- Nvim-Autopairs: autopairs for neovim written by lua
+    use { 
+        'windwp/nvim-autopairs'
+    }
 
 end)
