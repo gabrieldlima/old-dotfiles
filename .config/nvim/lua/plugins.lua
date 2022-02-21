@@ -27,4 +27,9 @@ return require("packer").startup(function()
     'p00f/nvim-ts-rainbow'
   }
 
+  -- Nvim-Autopairs: autopairs for neovim written by lua
+  use { 
+    'windwp/nvim-autopairs'
+  }
+
 end)
