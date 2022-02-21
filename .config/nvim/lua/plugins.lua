@@ -21,5 +21,10 @@ return require("packer").startup(function()
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate'
   }
+  
+  -- Nvim-TSRainbow: rainbow parentheses for neovim using tree-sitter
+  use {
+    'p00f/nvim-ts-rainbow'
+  }
 
 end)
