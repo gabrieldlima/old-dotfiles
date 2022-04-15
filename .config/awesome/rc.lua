@@ -79,9 +79,6 @@ awful.layout.layouts = {
 }
 -- }}}
 
--- Keyboard map indicator and switcher
-mykeyboardlayout = awful.widget.keyboardlayout()
-
 -- {{{ Wibar
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
