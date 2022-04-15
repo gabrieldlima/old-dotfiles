@@ -1,3 +1,6 @@
+--==============================================================================
+-- LIBRARIES
+--==============================================================================
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
@@ -17,9 +20,10 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
--- {{{ Error handling
--- Check if awesome encountered an error during startup and fell back to
--- another config (This code will only ever execute for the fallback config)
+
+--==============================================================================
+-- ERROR HANDLING
+--==============================================================================
 if awesome.startup_errors then
     naughty.notify({ preset = naughty.config.presets.critical,
                      title = "Oops, there were errors during startup!",
@@ -40,9 +44,11 @@ do
         in_error = false
     end)
 end
--- }}}
 
--- {{{ Variable definitions
+
+--==============================================================================
+-- VARIABLE DEFINITIONS
+--==============================================================================
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/home/gabriel/.config/awesome/theme.lua")
 
@@ -77,9 +83,11 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
 }
--- }}}
 
--- {{{ Wibar
+
+--==============================================================================
+-- WIBAR
+--==============================================================================
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
 
@@ -191,16 +199,20 @@ awful.screen.connect_for_each_screen(function(s)
         },
     }
 end)
--- }}}
 
--- {{{ Mouse bindings
+
+--==============================================================================
+-- MOUSE BINDINGS
+--==============================================================================
 root.buttons(gears.table.join(
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
--- }}}
 
--- {{{ Key bindings
+
+--==============================================================================
+-- KEY BINDINGS
+--==============================================================================
 globalkeys = gears.table.join(
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
@@ -407,9 +419,11 @@ clientbuttons = gears.table.join(
 
 -- Set keys
 root.keys(globalkeys)
--- }}}
 
--- {{{ Rules
+
+--==============================================================================
+-- RULES
+--==============================================================================
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
     -- All clients will match this rule.
@@ -465,9 +479,11 @@ awful.rules.rules = {
     -- { rule = { class = "Firefox" },
     --   properties = { screen = 1, tag = "2" } },
 }
--- }}}
 
--- {{{ Signals
+
+--==============================================================================
+-- SIGNALS
+--==============================================================================
 -- Signal function to execute when a new client appears.
 client.connect_signal("manage", function (c)
     -- Set the windows at the slave,
@@ -524,10 +540,11 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
--- }}}
 
 
--- {{{ Gaps
+--==============================================================================
+-- GAPS
+--==============================================================================
 beautiful.useless_gap = 8
 
 beautiful.gap_single_client = false
@@ -543,10 +560,10 @@ screen.connect_signal("arrange", function (s)
        end
    end
 end)
--- }}}
 
 
--- {{{ Autostart applications
+--==============================================================================
+-- AUTOSTART APPLICATIONS
+--==============================================================================
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("nitrogen --restore")
--- }}}
