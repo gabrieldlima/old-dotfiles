@@ -547,8 +547,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --==============================================================================
 beautiful.useless_gap = 8
 
-beautiful.gap_single_client = false
-
 -- No borders when rearranging only 1 non-floating or maximized client
 screen.connect_signal("arrange", function (s)
    local only_one = #s.tiled_clients == 1
