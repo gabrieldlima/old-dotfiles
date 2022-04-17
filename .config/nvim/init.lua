@@ -1,5 +1,6 @@
 require("options")
 require("plugins")
+require("colorscheme")
 
 -- Plugins
 require('lualine').setup()
