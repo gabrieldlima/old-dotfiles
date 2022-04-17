@@ -34,4 +34,9 @@ return require("packer").startup(function()
         'windwp/nvim-autopairs'
     }
 
+    -- Github theme
+    use { 
+        use "projekt0n/github-nvim-theme"
+    }
+
 end)
