@@ -50,6 +50,7 @@ end
 beautiful.init("/home/gabriel/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
+browser = "brave"
 file_manager = "pcmanfm"
 terminal = "kitty"
 editor = os.getenv("nvim") or "nvim"
@@ -235,6 +236,8 @@ globalkeys = gears.table.join(
         {description = "go back", group = "client"}),
 
     -- Standard program
+    awful.key({ modkey,           }, "b", function () awful.spawn(browser) end,
+              {description = "open a browser", group = "launcher"}),
     awful.key({ modkey,           }, "f", function () awful.spawn(file_manager) end,
               {description = "open a file manager", group = "launcher"}),
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
