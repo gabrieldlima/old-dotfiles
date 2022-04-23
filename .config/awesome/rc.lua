@@ -57,7 +57,7 @@ editor = os.getenv("nvim") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
-modkey = "Mod4"
+modkey = "Mod1"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
