@@ -11,33 +11,31 @@
 pcall(require, "luarocks.loader")
 
 -- Awesome libs
-require("error")
-require("keys")
-require("rules")
-require("signals")
-
--- Standard awesome library
+local keys = require("keys")
+local error = require("error")
+local signals = require("signals")
+require("awful.autofocus")
 local gears = require("gears")
 local awful = require("awful")
-require("awful.autofocus")
--- Widget and layout library
 local wibox = require("wibox")
--- Theme handling library
 local beautiful = require("beautiful")
--- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
+local config_dir = gears.filesystem.get_configuration_dir()                                       
+beautiful.init(config_dir .. "theme.lua")                                                         
+
+local rules = require("rules")                                                                    
+                                                                                                  
+awful.spawn.with_shell("nitrogen --restore")                                                      
+awful.spawn.with_shell("picom --experimental-backends")
 
 -- {{{ Variable definitions
--- Themes define colours, icons, font and wallpapers.
-beautiful.init("/home/gabriel/.config/awesome/theme.lua")
-
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.floating,
     awful.layout.suit.tile,
+    awful.layout.suit.floating,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
