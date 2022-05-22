@@ -13,6 +13,7 @@ pcall(require, "luarocks.loader")
 -- Awesome libs
 local awful = require("awful")
 local gears = require("gears")
+require("awful.autofocus")
 
 local config_dir = gears.filesystem.get_configuration_dir()                                       
 
