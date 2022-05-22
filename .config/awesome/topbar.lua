@@ -4,7 +4,7 @@ local beautiful = require("beautiful")
 local gears = require("gears")
 local menubar = require("menubar")
 
-require("widgets.menu")
+--require("widgets.menu")
 require("widgets.keyboard")
 require("widgets.clock")
 
