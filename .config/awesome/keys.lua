@@ -11,6 +11,7 @@ require("awful.hotkeys_popup.keys")
 terminal = "kitty"
 editor = os.getenv("nvim") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
+launcher = "/home/gabriel/.config/rofi/scripts/launcher.sh"
 
 -- Define modkeys
 local modkey   = "Mod4"
@@ -353,7 +354,8 @@ globalkeys = gears.table.join(
     ),
     awful.key(
         { modkey }, "r",     
-        function () awful.screen.focused().mypromptbox:run() end,
+        --function () awful.screen.focused().mypromptbox:run() end,
+        function () awful.spawn(launcher) end,
         { description = "run prompt", group = "launcher" }
     ),
 
