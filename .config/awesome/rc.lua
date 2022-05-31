@@ -26,7 +26,7 @@ local config_dir = gears.filesystem.get_configuration_dir()
 apps = {
     editor   = "nvim",
     launcher = "/home/gabriel/.config/rofi/scripts/launcher.sh",
-    terminal = "kitty"
+    terminal = "alacritty"
 }
 
 -- layouts
@@ -55,14 +55,14 @@ awful.layout.layouts = {
 -- ============================================================================
 
 local beautiful = require("beautiful")
-beautiful.init(config_dir .. "theme.lua")
+beautiful.init(config_dir .. "theme/theme.lua")
 
 
 -- ============================================================================
 -- Keybindings
 -- ============================================================================
 
-local keys = require("keys")
+local keys = require("core.keys")
 
 
 -- ============================================================================
@@ -72,7 +72,7 @@ local keys = require("keys")
 awful.spawn.with_shell("nitrogen --restore")                                                      
 awful.spawn.with_shell("picom --experimental-backends")
 
-local error = require("error")
-local signals = require("signals")
-local rules = require("rules")                                                                    
-local topbar = require("topbar")
+local error = require("core.error")
+local signals = require("core.signals")
+local rules = require("core.rules")                                                                    
+local topbar = require("theme.topbar")
