@@ -1,7 +1,12 @@
+import os
+import subprocess
 from libqtile.lazy import lazy
-from libqtile import bar, layout, widget
+from libqtile import bar, layout, widget, hook
 from libqtile.utils import guess_terminal
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
+
+
+
 
 # USER VARS
 
@@ -16,27 +21,6 @@ terminal     = "alacritty"
 web_browser  = "brave"
 file_browser = "pcmanfm"
 launcher     = "/home/gabriel/.config/rofi/scripts/launcher.sh"
-
-
-
-
-# LAYOUTS
-
-layouts = [
-    layout.MonadTall(margin=10),
-    layout.MonadWide(margin=10),
-    layout.Floating(margin=10),
-    #layout.Columns(),
-    #layout.Max(),
-    #layout.Stack(),
-    #layout.Bsp(),
-    #layout.Matrix(),
-    #layout.RatioTile(),
-    #layout.Tile(),
-    #layout.TreeTab(),
-    #layout.VerticalTile(),
-    #layout.Zoomy(),
-]
 
 
 
@@ -181,31 +165,56 @@ keys = [
 
 # GROUPS
 
-groups = [Group(i) for i in "123456789"]
+groups = [
+    Group("1", label=''),                                                         
+    Group("2", label=''),                                                         
+    Group("3", label=''),                                                         
+    Group("4", label=''),                                                         
+    Group("5", label=''),                                                         
+    Group("6", label=''),                                                        
+    Group("7", label=''),                                                        
+    Group("8", label=''),                                                         
+    Group("9", label='') 
+]
 
 for i in groups:
     keys.extend(
         [
-            # mod1 + letter of group = switch to group
+            # Switch to group
             Key(
-                [mod],
-                i.name,
+                [mod], i.name,
                 lazy.group[i.name].toscreen(),
-                desc="Switch to group {}".format(i.name),
+                desc="Switch to group {}".format(i.name)
             ),
-            # mod1 + shift + letter of group = switch to & move focused window to group
+            # Move focused window to group
             Key(
-                [mod, shift],
-                i.name,
-                lazy.window.togroup(i.name, switch_group=True),
-                desc="Switch to & move focused window to group {}".format(i.name),
-            ),
-            # Or, use below if you prefer not to switch to that group.
-            # # mod1 + shift + letter of group = move focused window to group
-            # Key([mod, shift], i.name, lazy.window.togroup(i.name),
-            #     desc="move focused window to group {}".format(i.name)),
+                [mod, shift], i.name,
+                lazy.window.togroup(i.name),
+                desc="Move focused window to group {}".format(i.name)
+            )
         ]
     )
+
+
+
+
+# LAYOUTS
+
+layouts = [
+    layout.MonadTall(margin=10),
+    layout.MonadWide(margin=10),
+    layout.Floating(margin=10),
+    #layout.Columns(),
+    #layout.Max(),
+    #layout.Stack(),
+    #layout.Bsp(),
+    #layout.Matrix(),
+    #layout.RatioTile(),
+    #layout.Tile(),
+    #layout.TreeTab(),
+    #layout.VerticalTile(),
+    #layout.Zoomy(),
+]
 
 
 
@@ -224,7 +233,6 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.TextBox("", foreground="#269ad4"), 
                 widget.GroupBox(),
                 widget.WindowName(),
                 widget.Chord(
@@ -281,3 +289,13 @@ reconfigure_screens = True
 wl_input_rules = None
 
 wmname = "LG3D"
+
+
+
+
+# FUNCTIONS
+
+@hook.subscribe.startup
+def autostart():
+    home = os.path.expanduser('~/.config/qtile/autostart.sh')
+    subprocess.run([home])
