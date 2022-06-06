@@ -19,7 +19,7 @@ rightclick = "Button3"
 
 terminal     = "alacritty"
 web_browser  = "brave"
-file_browser = "pcmanfm"
+file_browser = "nautilus"
 launcher     = "/home/gabriel/.config/rofi/scripts/launcher.sh"
 
 
@@ -164,7 +164,6 @@ keys = [
 
 
 # GROUPS
-
 groups = [
     Group("1", label=''),                                                         
     Group("2", label=''),                                                         
@@ -200,20 +199,27 @@ for i in groups:
 
 # LAYOUTS
 
+layout_theme = {
+    "margin": 10,
+    "border_width": 2,
+    "border_focus": "6e7681",
+    "font": "FiraCode Nerd Font"
+}
+
 layouts = [
-    layout.MonadTall(margin=10),
-    layout.MonadWide(margin=10),
-    layout.Floating(margin=10),
-    #layout.Columns(),
-    #layout.Max(),
-    #layout.Stack(),
-    #layout.Bsp(),
-    #layout.Matrix(),
-    #layout.RatioTile(),
-    #layout.Tile(),
-    #layout.TreeTab(),
-    #layout.VerticalTile(),
-    #layout.Zoomy(),
+    layout.MonadTall(**layout_theme),
+    layout.MonadWide(**layout_theme),
+    #layout.Floating(**layout_theme),
+    #layout.Columns(**layout_theme),
+    #layout.Max(**layout_theme),
+    #layout.Stack(**layout_theme),
+    #layout.Bsp(**layout_theme),
+    #layout.Matrix(**layout_theme),
+    #layout.RatioTile(**layout_theme),
+    #layout.Tile(**layout_theme),
+    #layout.TreeTab(**layout_theme),
+    #layout.VerticalTile(**layout_theme),
+    #layout.Zoomy(**layout_theme),
 ]
 
 
@@ -222,10 +228,9 @@ layouts = [
 # WIDGETS + BAR
 
 widget_defaults = dict(
-    font="JetBrainsMono Nerd Font",
-    # font="Fira Code Nerd Font",
+    font="FiraCode Nerd Font",
     fontsize=12,
-    padding=3,
+    padding=5,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -233,21 +238,67 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.GroupBox(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
+                widget.Image(
+                    filename="/home/gabriel/.config/qtile/icons/ArchLinux.png",
+                    background="#2E3440",
+                    margin_x=3,
+                    margin_y=5,
                 ),
-                widget.CurrentLayout(),
-                widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+                widget.GroupBox(
+                    rounded=False,
+                    borderwidth=0,
+                    disable_drag=True,
+                    active="#5E81AC",
+                    inactive="#2E3440",
+                    highlight_method="line",
+                    highlight_color="0d1117",
+                    block_highlight_text_color="#eceff4",
+
+                ),
+                widget.WindowName(),
+
+#------------------------------------------------------------------------------
+                widget.TextBox(
+                    text='',
+                    padding=0,
+                    fontsize=30,
+                    foreground="#4C566A",
+                    background="#0d1117"
+                ),
+                widget.TextBox(
+                    text="",
+                    fontsize=20,
+                    background="#4C566A",
+                    foreground="#ECEFF4"
+                ),
+                widget.KeyboardLayout(
+                    configured_keyboards=['us', 'br abnt2'],
+                    background="#4C566A",
+                    foreground="#ECEFF4"
+                ),
+
+#------------------------------------------------------------------------------
+                widget.TextBox(
+                    text='',
+                    padding=0,
+                    fontsize=30,
+                    foreground="#2E3440",
+                    background="#4C566A"
+                ),
+                widget.TextBox(
+                    text="",
+                    fontsize=18,
+                    background="2e3440",
+                    foreground="#ECEFF4"
+                ),
+                widget.Clock(
+                    format="%H:%M",
+                    background="#2E3440",
+                    foreground="#ECEFF4"
+                ),
             ],
-            24,
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+            30,
+            background="0d1117",
         ),
     ),
 ]
@@ -258,6 +309,7 @@ screens = [
 # RULES
 
 floating_layout = layout.Floating(
+    **layout_theme,
     float_rules=[
         *layout.Floating.default_float_rules,
         Match(wm_class="openrgb"),
