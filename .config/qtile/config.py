@@ -28,8 +28,8 @@ launcher     = "/home/gabriel/.config/rofi/scripts/launcher.sh"
 # KEYBINDINGS
 
 mouse = [
-    Drag([mod], leftclick, lazy.window.set_position_floating(), start=lazy.window.get_position()),
     Drag([mod], rightclick, lazy.window.set_size_floating(), start=lazy.window.get_size()),
+    Drag([mod], leftclick, lazy.window.set_position_floating(), start=lazy.window.get_position()),
 ]
 
 keys = [
@@ -37,126 +37,126 @@ keys = [
     Key(
         [mod], "j", 
         lazy.layout.down(), 
-        desc="Move focus down"
+        desc = "Move focus down"
     ),
     Key(
         [mod], "k", 
         lazy.layout.up(), 
-        desc="Move focus up"
+        desc = "Move focus up"
     ),
     Key(
         [mod], "h", 
         lazy.layout.left(), 
-        desc="Move focus to left"
+        desc = "Move focus to left"
     ),
     Key(
         [mod], "l", 
         lazy.layout.right(), 
-        desc="Move focus to right"
+        desc = "Move focus to right"
     ),
 
     # Move windows between left/right or up/down
     Key(
         [mod, shift], "j", 
         lazy.layout.shuffle_down(), 
-        desc="Move window down"
+        desc = "Move window down"
     ),
     Key(
         [mod, shift], "k", 
         lazy.layout.shuffle_up(), 
-        desc="Move window up"
+        desc = "Move window up"
     ),   Key(
         [mod, shift], "h", 
         lazy.layout.shuffle_left(), 
-        desc="Move window to the left"
+        desc = "Move window to the left"
     ),
     Key(
         [mod, shift], "l", 
         lazy.layout.shuffle_right(), 
-        desc="Move window to the right"
+        desc = "Move window to the right"
     ),
 
     # Grow windows
     Key(
         [mod, control], "j", 
         lazy.layout.grow_down(), 
-        desc="Grow window down"
+        desc = "Grow window down"
     ),
     Key(
         [mod, control], "k", 
         lazy.layout.grow_up(), 
-        desc="Grow window up"
+        desc = "Grow window up"
     ),
     Key(
         [mod, control], "h", 
         lazy.layout.grow_left(), 
-        desc="Grow window to the left"
+        desc = "Grow window to the left"
     ),
     Key(
         [mod, control], "l", 
         lazy.layout.grow_right(), 
-        desc="Grow window to the right"
+        desc = "Grow window to the right"
     ),
 
     # Toggle between different layouts as defined below
     Key(
         [mod], "space", 
         lazy.next_layout(), 
-        desc="Toggle between layouts"
+        desc = "Toggle between layouts"
     ),
     Key(
         [mod, shift], "space", 
         lazy.prev_layout(), 
-        desc="Toggle between layouts"
+        desc = "Toggle between layouts"
     ),
     Key(
         [alt], "Tab", 
         lazy.layout.next(), 
-        desc="Move window focus to another window"
+        desc = "Move window focus to another window"
     ),  
     Key(
         [mod, shift], "c", 
         lazy.window.kill(), 
-        desc="Kill focused window"
+        desc = "Kill focused window"
     ),
     Key(
         [mod], "f",
         lazy.window.toggle_fullscreen(),
-        desc="Put the focused window to/from fullscreen"
+        desc = "Put the focused window to/from fullscreen"
     ),
 
     # Qtile
     Key(
         [mod, shift], "r", 
         lazy.reload_config(), 
-        desc="Reload the config"
+        desc = "Reload the config"
     ),
     Key(
         [mod, shift], "q", 
         lazy.shutdown(),
-        desc="Reload the config"
+        desc = "Reload the config"
     ),
 
     # My Apps
     Key(
         [mod], "d", 
         lazy.spawn(launcher), 
-        desc="Launch prompt"
+        desc = "Launch prompt"
     ),
     Key(
         [mod], "Return", 
         lazy.spawn(terminal), 
-        desc="Launch terminal"
+        desc = "Launch terminal"
     ),
     Key(
         [mod], "b", 
         lazy.spawn(web_browser), 
-        desc="Launch web browser"
+        desc = "Launch web browser"
     ),
     Key(
         [mod], "e", 
         lazy.spawn(file_browser), 
-        desc="Launch file manager"
+        desc = "Launch file manager"
     )
 ]
 
@@ -165,15 +165,15 @@ keys = [
 
 # GROUPS
 groups = [
-    Group("1", label=''),                                                         
-    Group("2", label=''),                                                         
-    Group("3", label=''),                                                         
-    Group("4", label=''),                                                         
-    Group("5", label=''),                                                         
-    Group("6", label=''),                                                        
-    Group("7", label=''),                                                        
-    Group("8", label=''),                                                         
-    Group("9", label='') 
+    Group("1", label = ''),                                                         
+    Group("2", label = ''),                                                         
+    Group("3", label = ''),                                                         
+    Group("4", label = ''),                                                         
+    Group("5", label = ''),                                                         
+    Group("6", label = ''),                                                        
+    Group("7", label = ''),                                                        
+    Group("8", label = ''),                                                         
+    Group("9", label = '') 
 ]
 
 for i in groups:
@@ -183,13 +183,13 @@ for i in groups:
             Key(
                 [mod], i.name,
                 lazy.group[i.name].toscreen(),
-                desc="Switch to group {}".format(i.name)
+                desc = "Switch to group {}".format(i.name)
             ),
             # Move focused window to group
             Key(
                 [mod, shift], i.name,
                 lazy.window.togroup(i.name),
-                desc="Move focused window to group {}".format(i.name)
+                desc = "Move focused window to group {}".format(i.name)
             )
         ]
     )
@@ -197,12 +197,43 @@ for i in groups:
 
 
 
+# COLORS
+bg = [
+    ["#0d1117", "#0d1117"],
+]
+
+nord = [
+    # Polar Night
+    ["#2E3440", "#2E3440"],
+    ["#3B4252", "#3B4252"],
+    ["#434C5E", "#434C5E"],
+    ["#4C566A", "#4C566A"],
+    # Snow Storm
+    ["#D8DEE9", "#D8DEE9"],
+    ["#E5E9F0", "#E5E9F0"],
+    ["#ECEFF4", "#ECEFF4"],
+    # Frost
+    ["#8FBCBB", "#8FBCBB"],
+    ["#88C0D0", "#88C0D0"],
+    ["#81A1C1", "#81A1C1"],
+    ["#5E81AC", "#5E81AC"],
+    # Aurora
+    ["#BF616A", "#BF616A"],
+    ["#D08770", "#D08770"],
+    ["#EBCB8B", "#EBCB8B"],
+    ["#A3BE8C", "#A3BE8C"],
+    ["#B48EAD", "#B48EAD"] 
+]
+
+
+
+
 # LAYOUTS
 
 layout_theme = {
-    "margin": 10,
+    "margin": 5,
     "border_width": 2,
-    "border_focus": "6e7681",
+    "border_focus": nord[10],
     "font": "FiraCode Nerd Font"
 }
 
@@ -228,9 +259,9 @@ layouts = [
 # WIDGETS + BAR
 
 widget_defaults = dict(
-    font="FiraCode Nerd Font",
-    fontsize=12,
-    padding=5,
+    font = "FiraCode Nerd Font",
+    fontsize = 12,
+    padding = 5,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -239,66 +270,67 @@ screens = [
         top=bar.Bar(
             [
                 widget.Image(
-                    filename="/home/gabriel/.config/qtile/icons/ArchLinux.png",
-                    background="#2E3440",
-                    margin_x=3,
-                    margin_y=5,
+                    filename = "/home/gabriel/.config/qtile/icons/ArchLinux.png",
+                    background = nord[0],
+                    margin_x = 5,
+                    margin_y = 3,
                 ),
                 widget.GroupBox(
-                    rounded=False,
-                    borderwidth=0,
-                    disable_drag=True,
-                    active="#5E81AC",
-                    inactive="#2E3440",
-                    highlight_method="line",
-                    highlight_color="0d1117",
-                    block_highlight_text_color="#eceff4",
+                    rounded = False,
+                    borderwidth = 0,
+                    disable_drag = True,
+                    active = nord[10],
+                    inactive = nord[0],
+                    highlight_method = "line",
+                    highlight_color = bg[0],
+                    block_highlight_text_color = nord[4],
 
                 ),
                 widget.WindowName(),
 
 #------------------------------------------------------------------------------
                 widget.TextBox(
-                    text='',
-                    padding=0,
-                    fontsize=30,
-                    foreground="#4C566A",
-                    background="#0d1117"
+                    text = '',
+                    padding = 0,
+                    fontsize = 30,
+                    foreground = nord[3],
+                    background = bg[0]
                 ),
                 widget.TextBox(
-                    text="",
-                    fontsize=20,
-                    background="#4C566A",
-                    foreground="#ECEFF4"
+                    text = "",
+                    fontsize = 20,
+                    background = nord[3],
+                    foreground = nord[4]
                 ),
                 widget.KeyboardLayout(
-                    configured_keyboards=['us', 'br abnt2'],
-                    background="#4C566A",
-                    foreground="#ECEFF4"
+                    configured_keyboards = ['us', 'br abnt2'],
+                    background = nord[3],
+                    foreground = nord[4]
                 ),
 
 #------------------------------------------------------------------------------
                 widget.TextBox(
-                    text='',
-                    padding=0,
-                    fontsize=30,
-                    foreground="#2E3440",
-                    background="#4C566A"
+                    text = '',
+                    padding = 0,
+                    fontsize = 30,
+                    foreground = nord[0],
+                    background = nord[3]
                 ),
                 widget.TextBox(
-                    text="",
-                    fontsize=18,
-                    background="2e3440",
-                    foreground="#ECEFF4"
+                    text = "",
+                    fontsize = 18,
+                    background = nord[0],
+                    foreground = nord[4]
                 ),
                 widget.Clock(
-                    format="%H:%M",
-                    background="#2E3440",
-                    foreground="#ECEFF4"
+                    format = "%H:%M",
+                    background = nord[0],
+                    foreground = nord[4]
                 ),
             ],
             30,
-            background="0d1117",
+            margin = [5,5,0,5],
+            background = bg[0],
         ),
     ),
 ]
