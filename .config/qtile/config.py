@@ -238,11 +238,20 @@ layout_theme = {
 }
 
 layouts = [
-    layout.MonadTall(**layout_theme),
-    layout.MonadWide(**layout_theme),
+    layout.Columns(
+        margin = 5,
+        border_width = 2,
+        border_focus  = "#5E81AC",
+        border_normal = "#0d1117",
+        border_on_single = True,
+    ),
+    #layout.MonadTall(**layout_theme),
+    #layout.MonadWide(**layout_theme),
     #layout.Floating(**layout_theme),
-    #layout.Columns(**layout_theme),
     #layout.Max(**layout_theme),
+    #layout.MonadThreeCol(**layout_theme),
+    #layout.Slice(**layout_theme),
+    #layout.Spiral(**layout_theme),
     #layout.Stack(**layout_theme),
     #layout.Bsp(**layout_theme),
     #layout.Matrix(**layout_theme),
@@ -286,46 +295,55 @@ screens = [
                     block_highlight_text_color = nord[4],
 
                 ),
-                widget.WindowName(),
+                widget.Spacer(),
 
 #------------------------------------------------------------------------------
                 widget.TextBox(
-                    text = '',
+                    text = ' ',
                     padding = 0,
-                    fontsize = 30,
-                    foreground = nord[3],
+                    fontsize = 25,
+                    foreground = nord[0],
                     background = bg[0]
                 ),
-                widget.TextBox(
-                    text = "",
-                    fontsize = 20,
-                    background = nord[3],
-                    foreground = nord[4]
-                ),
-                widget.KeyboardLayout(
-                    configured_keyboards = ['us', 'br abnt2'],
-                    background = nord[3],
-                    foreground = nord[4]
+                widget.Systray(
+                    icon_size = 19,
+                    background = nord[0]
                 ),
 
 #------------------------------------------------------------------------------
                 widget.TextBox(
-                    text = '',
+                    text = ' ',
                     padding = 0,
-                    fontsize = 30,
-                    foreground = nord[0],
-                    background = nord[3]
+                    fontsize = 25,
+                    foreground = nord[3],
+                    background = nord[0]
                 ),
                 widget.TextBox(
-                    text = "",
+                    text = "",
                     fontsize = 18,
-                    background = nord[0],
+                    background = nord[3],
                     foreground = nord[4]
                 ),
                 widget.Clock(
-                    format = "%H:%M",
-                    background = nord[0],
+                    format = "%a %I:%M %p",
+                    background = nord[3],
                     foreground = nord[4]
+                ),
+
+#------------------------------------------------------------------------------
+                widget.TextBox(
+                    text = ' ',
+                    padding = 0,
+                    fontsize = 25,
+                    foreground = nord[0],
+                    background = nord[3]
+                ),              
+                widget.CurrentLayoutIcon(
+                    custom_icon_paths = ["/home/gabriel/.config/qtile/icons/Layouts"],
+                    padding = 0,
+                    scale = 0.6,
+                    foreground = nord[4],
+                    background = nord[0],
                 ),
             ],
             30,
