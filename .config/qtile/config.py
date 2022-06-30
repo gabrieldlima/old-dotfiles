@@ -291,7 +291,6 @@ screens = [
 # LAYOUT
 #------------------------------------------------------------------------------
                 widget.CurrentLayoutIcon(
-                    custom_icon_paths = ["/home/gabriel/.config/qtile/icons/Layouts"],
                     padding = 0,
                     scale = 0.6,
                     foreground = color[1],
