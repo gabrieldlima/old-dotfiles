@@ -1,7 +1,10 @@
 #!/bin/bash
 
+killall -q clipit
+
 picom &
 nm-applet &
 volctl-applet &
 blueman-applet &
+clipit &
 nitrogen --restore &
