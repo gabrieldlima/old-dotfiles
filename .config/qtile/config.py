@@ -1,3 +1,6 @@
+# qtile
+# Version: 0.21.0-1
+
 import os
 import subprocess
 from libqtile.lazy import lazy
@@ -198,31 +201,13 @@ for i in groups:
 
 
 # COLORS
-bg = [
-    ["#0d1117", "#0d1117"],
-]
 
-nord = [
-    # Polar Night
-    ["#2E3440", "#2E3440"],
-    ["#3B4252", "#3B4252"],
+color = [
+    ["#10151B", "#10151B"],
+    ["#98D1CE", "#98D1CE"],
     ["#434C5E", "#434C5E"],
-    ["#4C566A", "#4C566A"],
-    # Snow Storm
-    ["#D8DEE9", "#D8DEE9"],
-    ["#E5E9F0", "#E5E9F0"],
-    ["#ECEFF4", "#ECEFF4"],
-    # Frost
-    ["#8FBCBB", "#8FBCBB"],
-    ["#88C0D0", "#88C0D0"],
-    ["#81A1C1", "#81A1C1"],
-    ["#5E81AC", "#5E81AC"],
-    # Aurora
-    ["#BF616A", "#BF616A"],
-    ["#D08770", "#D08770"],
-    ["#EBCB8B", "#EBCB8B"],
-    ["#A3BE8C", "#A3BE8C"],
-    ["#B48EAD", "#B48EAD"] 
+    ["#10151B", "#10151B"],
+    ["#D3EBE9", "#D3EBE9"],
 ]
 
 
@@ -233,7 +218,7 @@ nord = [
 layout_theme = {
     "margin": 5,
     "border_width": 2,
-    "border_focus": nord[10],
+    "border_focus": color[1],
     "font": "FiraCode Nerd Font"
 }
 
@@ -278,77 +263,73 @@ screens = [
     Screen(
         top=bar.Bar(
             [
+# ARCH LOGO
+#------------------------------------------------------------------------------
                 widget.Image(
                     filename = "/home/gabriel/.config/qtile/icons/ArchLinux.png",
-                    background = nord[0],
+                    background = color[3],
                     margin_x = 5,
                     margin_y = 3,
                 ),
+
+# GROUP BOX
+#------------------------------------------------------------------------------
                 widget.GroupBox(
                     rounded = False,
                     borderwidth = 0,
                     disable_drag = True,
-                    active = nord[10],
-                    inactive = nord[0],
+                    background = color[0],
+                    active = color[1],
+                    inactive = color[2],
                     highlight_method = "line",
-                    highlight_color = bg[0],
-                    block_highlight_text_color = nord[4],
+                    highlight_color = color[0],
+                    block_highlight_text_color = color[4],
 
                 ),
-                widget.Spacer(),
+               widget.Spacer(),
 
+# LAYOUT
 #------------------------------------------------------------------------------
-                widget.TextBox(
-                    text = ' ',
-                    padding = 0,
-                    fontsize = 25,
-                    foreground = nord[0],
-                    background = bg[0]
-                ),
-                widget.Systray(
-                    icon_size = 19,
-                    background = nord[0]
-                ),
-
-#------------------------------------------------------------------------------
-                widget.TextBox(
-                    text = ' ',
-                    padding = 0,
-                    fontsize = 25,
-                    foreground = nord[3],
-                    background = nord[0]
-                ),
-                widget.TextBox(
-                    text = "",
-                    fontsize = 18,
-                    background = nord[3],
-                    foreground = nord[4]
-                ),
-                widget.Clock(
-                    format = "%a %I:%M %p",
-                    background = nord[3],
-                    foreground = nord[4]
-                ),
-
-#------------------------------------------------------------------------------
-                widget.TextBox(
-                    text = ' ',
-                    padding = 0,
-                    fontsize = 25,
-                    foreground = nord[0],
-                    background = nord[3]
-                ),              
                 widget.CurrentLayoutIcon(
                     custom_icon_paths = ["/home/gabriel/.config/qtile/icons/Layouts"],
                     padding = 0,
                     scale = 0.6,
-                    foreground = nord[4],
-                    background = nord[0],
+                    foreground = color[1],
+                    background = color[0],
+                ),
+                
+# SYSTRAY
+#------------------------------------------------------------------------------
+                widget.Systray(
+                    icon_size = 19,
+                    background = color[0]
+                ),
+
+# KEYBOARD
+#------------------------------------------------------------------------------
+                widget.TextBox(
+                    text = '  ',
+                    padding = 0,
+                    fontsize = 20,
+                    foreground = color[1],
+                    background = color[3]
+                ),
+                widget.KeyboardLayout(
+                    configured_keyboards = ["us", "br abnt2"],
+                    display_map = {"us":"US", "br abnt2":"BR" },
+                    foreground = color[1],
+                    background = color[3]
+                ),
+
+# CLOCK
+#------------------------------------------------------------------------------
+                widget.Clock(
+                    foreground = color[1],
                 ),
             ],
             30,
             margin = [5,5,0,5],
-            background = bg[0],
+            background = color[0],
         ),
     ),
 ]
