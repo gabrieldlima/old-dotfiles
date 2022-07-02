@@ -10,6 +10,10 @@ super + Return
 super + @space
 	rofi -show drun -show-icons
 
+# web browser
+super + b
+    brave
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
