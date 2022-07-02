@@ -1,5 +1,0 @@
-[module/updates]
-type = custom/script
-exec = ~/.config/polybar/scripts/updates.sh
-interval = 600
-label = %{T3}%{T1} %output%
