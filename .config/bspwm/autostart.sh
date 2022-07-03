@@ -1,5 +1,9 @@
 #!/bin/env bash
 
-picom --config $HOME/.config/picom/jonaburg/picom.conf --experimental-backend &
-$HOME/.config/polybar/launch.sh &
+picom --experimental-backend &
 nitrogen --restore &
+nm-applet &
+volctl-applet &
+clipit-applet &
+blueman-applet &
+$HOME/.config/polybar/launch.sh &
