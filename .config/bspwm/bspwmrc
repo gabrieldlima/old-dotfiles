@@ -3,7 +3,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d I II III IV V VI VII VIII IX
 
 bspc config border_width         2
 bspc config window_gap          12
