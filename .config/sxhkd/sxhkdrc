@@ -7,7 +7,7 @@ super + Return
 	alacritty
 
 # program launcher
-super + @space
+super + d
 	rofi -show drun -show-icons
 
 # web browser
