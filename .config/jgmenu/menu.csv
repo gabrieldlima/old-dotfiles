@@ -1,0 +1,21 @@
+Restart BSPWM, bspc wm -r, /home/gabriel/.config/jgmenu/icons/wm.svg
+Restart SXHKD, pkill -USR1 -x sxhkd, /home/gabriel/.config/jgmenu/icons/keyboard.svg
+Restart Polybar, ~/.config/polybar/launch.sh, /home/gabriel/.config/jgmenu/icons/bar.svg
+^sep()
+
+
+Randomize Wallpaper, nitrogen --set-zoom-fill --save --random Wallpapers, /home/gabriel/.config/jgmenu/icons/wallpaper.svg
+^sep()
+
+Terminal, alacritty, /home/gabriel/.config/jgmenu/icons/terminal.svg
+Neovim, alacritty -e nvim, nvim
+File Manager, alacritty -e ranger, /home/gabriel/.config/jgmenu/icons/file-manager.svg 
+^sep()
+
+Lock, echo "", /home/gabriel/.config/jgmenu/icons/lock-screen.svg
+Logout, echo "", /home/gabriel/.config/jgmenu/icons/logout.svg
+Exit, ^checkout(exit)
+
+^tag(exit)
+Reboot, reboot, /home/gabriel/.config/jgmenu/icons/reboot.svg
+Poweroff, poweroff, /home/gabriel/.config/jgmenu/icons/shutdown.svg
