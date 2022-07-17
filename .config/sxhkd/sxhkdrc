@@ -18,6 +18,10 @@ super + b
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# menu
+~button3
+    bspc query -D -d .focused.!occupied && jgmenu_run
+
 #
 # bspwm hotkeys
 #
