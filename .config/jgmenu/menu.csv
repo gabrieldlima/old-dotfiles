@@ -7,7 +7,7 @@ Randomize Wallpaper, nitrogen --set-zoom-fill --save --random Pictures/Wallpaper
 ^sep()
 
 Lock, betterlockscreen -l dim, /home/gabriel/.config/jgmenu/icons/lock-screen.svg
-Logout, echo "", /home/gabriel/.config/jgmenu/icons/logout.svg
+Logout, pkill -KILL -u "$USER" &, /home/gabriel/.config/jgmenu/icons/logout.svg
 Exit, ^checkout(exit)
 
 ^tag(exit)
