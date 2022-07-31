@@ -3,16 +3,10 @@ Restart SXHKD, pkill -USR1 -x sxhkd, /home/gabriel/.config/jgmenu/icons/keyboard
 Restart Polybar, ~/.config/polybar/launch.sh, /home/gabriel/.config/jgmenu/icons/bar.svg
 ^sep()
 
-
-Randomize Wallpaper, nitrogen --set-zoom-fill --save --random Wallpapers, /home/gabriel/.config/jgmenu/icons/wallpaper.svg
+Randomize Wallpaper, nitrogen --set-zoom-fill --save --random Pictures/Wallpapers, /home/gabriel/.config/jgmenu/icons/wallpaper.svg
 ^sep()
 
-Terminal, alacritty, /home/gabriel/.config/jgmenu/icons/terminal.svg
-Neovim, alacritty -e nvim, nvim
-File Manager, alacritty -e ranger, /home/gabriel/.config/jgmenu/icons/file-manager.svg 
-^sep()
-
-Lock, echo "", /home/gabriel/.config/jgmenu/icons/lock-screen.svg
+Lock, betterlockscreen -l dim, /home/gabriel/.config/jgmenu/icons/lock-screen.svg
 Logout, echo "", /home/gabriel/.config/jgmenu/icons/logout.svg
 Exit, ^checkout(exit)
 
