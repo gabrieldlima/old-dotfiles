@@ -22,13 +22,17 @@ super + Escape
 ~button3
     bspc query -D -d .focused.!occupied && jgmenu_run
 
+# lock screen
+super + shift + x
+    betterlockscreen -l dim
+
 #
 # bspwm hotkeys
 #
 
-# quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
+# restart bspwm
+super + alt + r
+	bspc wm -r
 
 # close and kill
 super + shift + q
