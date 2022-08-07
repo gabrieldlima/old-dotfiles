@@ -23,7 +23,7 @@ window {
     transparency:                   "real";
     background-color:               @bg;
     text-color:                     @fg;
-	border:							0px;
+	border:							1px;
 	border-color:					@ac;
     border-radius:                  12px;
 	width:							30%;
