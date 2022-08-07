@@ -1,30 +1,29 @@
-#! /bin/sh
-# Version: 0.9.10-2
+#!/bin/env bash
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX
 
-bspc config border_width         2
-bspc config window_gap          12
-bspc config top_padding          5
-bspc config bottom_padding       5
-bspc config left_padding         5
-bspc config right_padding        5
+bspc config border_width         1
+bspc config window_gap           10
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+bspc config automatic_scheme spiral
+bspc config initial_polarity first_child
+
 bspc config normal_border_color  "#000000"
 bspc config focused_border_color "#ffffff"
 bspc config focus_follows_pointer true
 
-bspc rule -a Brave-browser desktop='^2'
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+bspc rule -a Brave-browser desktop='^2' state=tiled follow=on
+bspc rule -a discord       desktop='^7' state=tiled follow=on
+bspc rule -a Steam         desktop='^8' state=tiled follow=on
+bspc rule -a Lxappearance  state=floating follow=on
+bspc rule -a openrgb       state=floating follow=on
+bspc rule -a Piper         state=floating follow=on
+bspc rule -a Pavucontrol   state=floating follow=on
 
 $HOME/.config/bspwm/autostart.sh
