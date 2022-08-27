@@ -188,12 +188,29 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Tomorrow Night)
+# The 'Dark default' colorscheme from Github.
 colors:
-  # Default colors
   primary:
-    background: '#0a1011'
-  #  foreground: '#c5c8c6'
+    background: '#0d1117'
+    foreground: '#adbac7'
+  normal:
+    black:   '#2d333b'
+    red:     '#f47067'
+    green:   '#8ddb8c'
+    yellow:  '#f69d50'
+    blue:    '#6cb6ff'
+    magenta: '#dcbdfb'
+    cyan:    '#96d0ff'
+    white:   '#adbac7'
+  bright:
+    black:   '#768390'
+    red:     '#f47067'
+    green:   '#8ddb8c'
+    yellow:  '#f69d50'
+    blue:    '#6cb6ff'
+    magenta: '#dcbdfb'
+    cyan:    '#96d0ff'
+    white:   '#adbac7'
 
     # Bright and dim foreground colors
     #
