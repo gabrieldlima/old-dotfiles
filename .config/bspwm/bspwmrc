@@ -14,8 +14,8 @@ bspc config gapless_monocle      true
 bspc config automatic_scheme spiral
 bspc config initial_polarity first_child
 
-bspc config normal_border_color  "#0a1011"
-bspc config focused_border_color "#f8f8f2"
+bspc config normal_border_color  "#0D1117"
+bspc config focused_border_color "#C9D1D9"
 bspc config focus_follows_pointer true
 
 bspc rule -a Brave-browser desktop='^2' state=tiled follow=on

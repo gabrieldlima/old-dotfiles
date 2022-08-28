@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"FiraCode Nerd Font 11";
+	font:							"JetBrains Mono Nerd Font 11";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
