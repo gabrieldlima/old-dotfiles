@@ -23,10 +23,10 @@ window {
     transparency:                   "real";
     background-color:               @bg;
     text-color:                     @fg;
-	border:							0px;
+	border:							1px;
 	border-color:					@ac;
     border-radius:                  0px;
-	width:							30%;
+	width:							35%;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -37,7 +37,7 @@ prompt {
 	padding: 						0.0% 1% 0% -0.5%;
 	background-color: 				@al;
 	text-color: 					@fg;
-	font:							"FiraCode Nerd Font 13";
+	font:							"JetBrains Mono Nerd Font 13";
 }
 
 entry {
@@ -114,6 +114,6 @@ element selected {
     background-color:               @ac;
     text-color:                     @bg;
 	border:							0% 0% 0% 0%;
-    border-radius:                  12px;
+    border-radius:                  0px;
     border-color:                  	@bg;
 }
