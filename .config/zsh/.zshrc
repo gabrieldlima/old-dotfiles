@@ -1,5 +1,8 @@
 source $HOME/.config/zsh/.zprofile
 
+# AUTO/TAB COMPLETE
+autoload -U compinit && compinit
+
 # VI MODE
 bindkey -v
 
@@ -12,3 +15,6 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt INC_APPEND_HISTORY_TIME
+
+# PLUGINS
+source $HOME/.config/zsh/plugins/zsh-autosuggestions.zsh
