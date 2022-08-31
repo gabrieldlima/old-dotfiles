@@ -4,4 +4,8 @@ export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export BROWSER='brave'
 export EDITOR='nvim'
 export TERMINAL='alacritty'
-export TERM="xterm-256color'
+export TERM='xterm-256color'
+
+export HISTFILE=$HOME/.config/zsh/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
