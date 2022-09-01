@@ -16,6 +16,9 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt INC_APPEND_HISTORY_TIME
 
+# ALIASES
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 # PLUGINS
 source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
