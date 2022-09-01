@@ -18,6 +18,9 @@ setopt INC_APPEND_HISTORY_TIME
 
 # ALIASES
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ls='exa -la --group-directories-first --icons'
+alias cat='bat'
+alias mkdir='mkdir -p'
 
 # PLUGINS
 source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
