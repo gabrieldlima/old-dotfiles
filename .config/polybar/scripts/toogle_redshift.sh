@@ -5,6 +5,6 @@ then
     redshift -x
     killall -q redshift
 else
-    # dunstify "4500K"
+    dunstify "Night Light: 4500K"
     redshift
 fi
