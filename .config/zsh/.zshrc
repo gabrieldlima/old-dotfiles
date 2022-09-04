@@ -1,18 +1,19 @@
+# ENVIRONMENT VARIABLES
 source $HOME/.config/zsh/.zprofile
 
-# AUTO/TAB COMPLETE
-autoload -U compinit && compinit
-
-# PROMPT
-eval "$(starship init zsh)"
-
-# HISTORY
+# ZSH OPTIONS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt INC_APPEND_HISTORY_TIME
 setopt COMPLETE_ALIASES
+
+# PROMPT
+eval "$(starship init zsh)"
+
+# AUTO/TAB COMPLETE
+autoload -U compinit && compinit
 
 # ALIASES
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
