@@ -12,8 +12,9 @@ setopt COMPLETE_ALIASES
 # PROMPT
 eval "$(starship init zsh)"
 
-# AUTO/TAB COMPLETE
+# AUTOCOMPLETE
 autoload -U compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # ALIASES
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
