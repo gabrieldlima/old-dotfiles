@@ -16,6 +16,16 @@ eval "$(starship init zsh)"
 autoload -U compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
+# MENUSELECT
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+
+# BINDKEYS
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+
 # ALIASES
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias token='cat $HOME/.config/token | xclip -selection clipboard'
