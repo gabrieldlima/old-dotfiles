@@ -15,6 +15,7 @@ setopt INC_APPEND_HISTORY_TIME
 
 # ALIASES
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias token='cat $HOME/.config/token | xclip -selection clipboard'
 alias ls='exa -la --group-directories-first --icons'
 alias cat='bat'
 alias mkdir='mkdir -p'
