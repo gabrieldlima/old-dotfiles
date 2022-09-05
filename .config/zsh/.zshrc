@@ -15,8 +15,6 @@ eval "$(starship init zsh)"
 # AUTOCOMPLETE
 autoload -U compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-
-# MENUSELECT
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 
