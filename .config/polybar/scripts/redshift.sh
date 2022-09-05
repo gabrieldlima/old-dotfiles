@@ -2,7 +2,7 @@
 
 if [ $(pidof redshift) ]
 then
-    echo ""
+    echo ""
 else
-    echo ""
+    echo ""
 fi
