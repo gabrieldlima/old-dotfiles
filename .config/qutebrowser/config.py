@@ -11,6 +11,10 @@ c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', 'g': 'https://
 # Dark mode
 c.colors.webpage.preferred_color_scheme = 'dark'
 
+# Zoom
+c.zoom.default = '100'
+c.zoom.levels = ["25%", "50%", "75%", "100%", "110%", "125%", "150%", "175%", "200%"]
+
 # Fonts
 c.fonts.default_family = "JetBrains Mono"
 c.fonts.default_size = '10pt'
