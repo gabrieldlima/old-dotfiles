@@ -12,7 +12,7 @@ super + d
 
 # web browser
 super + b
-    brave
+    qutebrowser
 
 # make sxhkd reload its configuration files:
 super + Escape
