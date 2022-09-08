@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	rofi -show drun -show-icons
+	rofi -config ~/.config/rofi/launcher/config.rasi -show drun -show-icons
 
 # web browser
 super + b
