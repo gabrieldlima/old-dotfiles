@@ -18,7 +18,7 @@ bspc config normal_border_color  "#0D1117"
 bspc config focused_border_color "#C9D1D9"
 bspc config focus_follows_pointer true
 
-bspc rule -a qutebrowser   desktop='^2' state=tiled follow=on
+bspc rule -a brave	   desktop='^2' state=tiled follow=on
 bspc rule -a discord       desktop='^7' state=tiled follow=on
 bspc rule -a Steam         desktop='^8' state=tiled follow=on
 bspc rule -a Lxappearance  state=floating follow=on

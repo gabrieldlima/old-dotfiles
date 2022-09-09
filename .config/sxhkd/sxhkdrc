@@ -10,9 +10,13 @@ super + Return
 super + d
 	rofi -config ~/.config/rofi/launcher/config.rasi -show drun -show-icons
 
+# powermenu
+super + p
+	$HOME/.config/rofi/powermenu/powermenu.sh
+
 # web browser
 super + b
-    qutebrowser
+    brave
 
 # make sxhkd reload its configuration files:
 super + Escape
