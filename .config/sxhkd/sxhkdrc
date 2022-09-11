@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	rofi -config ~/.config/rofi/launcher/config.rasi -show drun -show-icons
+	$HOME/.config/rofi/launcher/launcher.sh
 
 # powermenu
 super + p
