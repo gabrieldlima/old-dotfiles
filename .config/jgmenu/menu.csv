@@ -6,10 +6,10 @@ Restart Polybar, ~/.config/polybar/launch.sh
 Randomize Wallpaper, nitrogen --set-zoom-fill --save --random Pictures/Wallpapers
 ^sep()
 
- Lock, betterlockscreen -l dim
- Logout, pkill -KILL -u "$USER" &
+ Lock, betterlockscreen -l
+ Logout, bspc quit
  Exit, ^checkout(exit)
 
 ^tag(exit)
- Reboot, reboot
- Poweroff, poweroff
+ Reboot, systemctl reboot
+ Poweroff, systemctl poweroff
