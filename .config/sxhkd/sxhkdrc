@@ -28,7 +28,7 @@ super + Escape
 
 # lock screen
 super + shift + x
-    betterlockscreen -l dim
+    betterlockscreen -l
 
 
 # =============================================================================
