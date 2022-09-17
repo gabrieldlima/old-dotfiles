@@ -21,7 +21,7 @@ configuration {
     foreground:                  #C9D1D9;
     selected:                    #C9D1D9;
     active:                      #9878FF;
-    urgent:                      #7D0075;
+    urgent:                      #F47067;
 }
 
 /*---------------------------------------------------------------------------*/
