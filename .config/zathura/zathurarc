@@ -1,0 +1,33 @@
+# Enable copy to clipboard
+set selection-clipboard clipboard
+
+# Font
+set font "JetBrainsMono Nerd Font 12"
+
+# Colors
+set default-bg "#0D1117"
+set default-fg "#C9D1D9"
+
+set inputbar-bg "#161b22"
+set inputbar-fg "#8DDB8C"
+
+set statusbar-bg "#0D1117"
+set statusbar-fg "#C9D1D9"
+
+set completion-bg "#161b22"
+set completion-fg "#C9D1D9"
+
+set completion-highlight-bg "#8DDB8C"
+set completion-highlight-fg "#0D1117"
+
+set index-bg "#0D1117"
+set index-fg "#C9D1D9"
+
+set index-active-bg "#8DDB8C"
+set index-active-fg "#0D1117"
+
+set notification-error-bg "#F47067"
+set notification-error-fg "#0D1117"
+
+set notification-error-bg "#F69D50"
+set notification-error-fg "#0D1117"
