@@ -1,3 +1,5 @@
+WORDCHARS='*?_-.[]~=\&;!#%^(){}<>|'
+
 # ENVIRONMENT VARIABLES
 source $HOME/.config/zsh/.zprofile
 
