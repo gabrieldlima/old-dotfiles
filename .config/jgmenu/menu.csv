@@ -3,7 +3,7 @@ Restart SXHKD, pkill -USR1 -x sxhkd
 Restart Polybar, ~/.config/polybar/launch.sh
 ^sep()
 
-Randomize Wallpaper, nitrogen --set-zoom-fill --save --random Pictures/Wallpapers
+Change Background, nitrogen
 ^sep()
 
  Lock, betterlockscreen -l
