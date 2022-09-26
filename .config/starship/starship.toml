@@ -2,16 +2,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
-add_newline = true
+add_newline = false
 
 # Default prompt format 
 format = "$all"
 
-
 [character] 
-success_symbol = "[➜](bold green)"
-error_symbol = "[➜](bold red)"
-
+success_symbol = "[λ](bold green)"
+error_symbol = "[λ](bold red)"
+vicmd_symbol = "[](bold yellow)"
 
 # Disable the package module, hiding it from the prompt completely
 [package]
