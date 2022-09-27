@@ -20,11 +20,11 @@ super + b
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+    pkill -USR1 -x sxhkd
 
 # menu
 ~button3
-    bspc query -D -d .focused.!occupied && jgmenu_run
+    xqp 0 $(xdo id -N Bspwm -n root) && jgmenu_run
 
 # lock screen
 super + shift + x
