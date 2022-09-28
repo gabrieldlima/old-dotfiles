@@ -1,15 +1,9 @@
-Restart BSPWM, bspc wm -r
-Restart SXHKD, pkill -USR1 -x sxhkd
-Restart Polybar, ~/.config/polybar/launch.sh
+Restart Bspwm, bspc wm -r
+Restart Sxhkd, pkill -USR1 -x sxhkd
+Restart Polybar, $HOME/.config/polybar/launch.sh
 ^sep()
 
 Change Background, nitrogen
 ^sep()
 
- Lock, betterlockscreen -l
- Logout, bspc quit
- Exit, ^checkout(exit)
-
-^tag(exit)
- Reboot, systemctl reboot
- Poweroff, systemctl poweroff
+Exit, $HOME/.config/rofi/powermenu/powermenu.sh
