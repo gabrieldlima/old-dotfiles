@@ -18,6 +18,10 @@ super + p
 super + b
     brave
 
+# file explorer
+super + e
+    Thunar
+
 # make sxhkd reload its configuration files:
 super + Escape
     pkill -USR1 -x sxhkd
