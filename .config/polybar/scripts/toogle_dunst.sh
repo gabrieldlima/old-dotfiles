@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ $(dunstctl is-paused | grep "true" | wc -c) -eq 0 ]
+then
+    dunstctl set-paused true
+else
+    dunstctl set-paused false
+fi

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ $(dunstctl is-paused | grep "true" | wc -c) -eq 0 ]
+then
+    echo ""
+else
+    echo ""
+fi
