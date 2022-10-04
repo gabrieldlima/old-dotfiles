@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 hidden=/tmp/syshide.lock
 file="$HOME/.config/polybar/modules/systray.ini"
