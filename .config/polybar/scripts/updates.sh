@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 if ! updates=$(yay -Qu 2> /dev/null | wc -l); then
     updates=0
