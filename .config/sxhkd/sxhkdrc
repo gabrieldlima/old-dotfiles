@@ -20,7 +20,7 @@ super + b
 
 # file explorer
 super + e
-    Thunar
+    alacritty -e lf
 
 # make sxhkd reload its configuration files:
 super + Escape
