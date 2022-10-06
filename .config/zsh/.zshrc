@@ -34,6 +34,7 @@ alias ll='exa -l --group-directories-first --icons'
 alias la='exa -la --group-directories-first --icons'
 alias cat='bat'
 alias mkdir='mkdir -p'
+alias lf='$HOME/.config/lf/lf-ueberzug'
 
 # PLUGINS
 source $HOME/.config/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh

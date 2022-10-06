@@ -2,6 +2,9 @@
 set shell sh
 set drawbox
 
+set previewer ~/.config/lf/lf-ueberzug-previewer
+set cleaner ~/.config/lf/lf-ueberzug-cleaner
+
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
 # exit on error and option '-u' is used to give error for unset variables.
