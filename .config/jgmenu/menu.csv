@@ -1,9 +1,18 @@
-Restart Bspwm, bspc wm -r
-Restart Sxhkd, pkill -USR1 -x sxhkd
-Restart Polybar, $HOME/.config/polybar/launch.sh
+ Restart Bspwm, bspc wm -r
+ Restart Sxhkd, pkill -USR1 -x sxhkd
+ Restart Polybar, $HOME/.config/polybar/launch.sh
 ^sep()
 
-Change Background, nitrogen
+ Find Window Class, dunstify -i window_list "Find Window Class" "$(xprop WM_CLASS | tr -d '\n' | xclip -sel c -f)"
+ Change Background, nitrogen
 ^sep()
 
-Exit, $HOME/.config/rofi/powermenu/powermenu.sh
+ Lock, betterlockscreen -l dim
+ Logout, bspc quit
+ Exit, ^checkout(exit)
+
+^tag(exit)
+ Hibernate, systemctl hibernate
+ Suspend, systemctl suspend
+ Reboot, systemctl reboot
+ Poweroff, systemctl poweroff
