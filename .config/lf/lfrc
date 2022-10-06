@@ -1,6 +1,7 @@
 # interpreter for shell commands
 set shell sh
 set drawbox
+set icons true
 
 set previewer ~/.config/lf/lf-ueberzug-previewer
 set cleaner ~/.config/lf/lf-ueberzug-cleaner
