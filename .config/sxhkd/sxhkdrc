@@ -34,6 +34,13 @@ super + Escape
 super + shift + x
     betterlockscreen -l
 
+# volume control
+F2
+    ponymix decrease 5 | notify.sh audio
+F3
+    ponymix increase 5 | notify.sh audio
+F4
+    pulsemixer --toggle-mute --get-mute | notify.sh muted
 
 # =============================================================================
 # BSPWM HOTKEYS
