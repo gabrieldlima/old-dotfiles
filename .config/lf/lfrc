@@ -5,6 +5,9 @@
 # interpreter for shell commands
 set shell sh
 
+# Show hidden folders/files
+set hidden
+
 # enable drawbow
 set drawbox
 
