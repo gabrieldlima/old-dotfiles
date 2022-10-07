@@ -11,3 +11,5 @@ export TERM='xterm-256color'
 export HISTFILE=$HOME/.config/zsh/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000
+
+export PATH="$HOME/.local/bin/:$PATH"
