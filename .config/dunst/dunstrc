@@ -47,6 +47,9 @@
     # for example dunstify -h int:value:12
     progress_bar = true
 
+    # Set the colour of the progress bar
+    highlight = "#C9D1D9"
+
     # Set the progress bar height. This includes the frame, so make sure
     # it's at least twice as big as the frame width.
     progress_bar_height = 10
