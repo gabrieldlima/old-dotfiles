@@ -50,7 +50,7 @@ map X !$f
 map o open
 map O open
 
-# toggle to show hidden files/folders 
+# toggle to show hidden files/folders
 map H push :set<space>hidden!<enter>
 
 
