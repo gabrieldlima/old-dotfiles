@@ -5,9 +5,6 @@
 # interpreter for shell commands
 set shell sh
 
-# Show hidden folders/files
-set hidden
-
 # enable drawbow
 set drawbox
 
@@ -52,6 +49,9 @@ map X !$f
 # dedicated keys for file opener actions
 map o open
 map O open
+
+# toggle to show hidden files/folders 
+map H push :set<space>hidden!<enter>
 
 
 # =============================================================================
