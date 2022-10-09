@@ -54,7 +54,10 @@ map O open
 map H push :set<space>hidden!<enter>
 
 # create a new folder
-map M push :mkdir<space>
+map a push :mkdir<space>
+
+# create a new file
+map Mf push :touch<space>
 
 
 # =============================================================================
@@ -63,6 +66,9 @@ map M push :mkdir<space>
 
 # create folders
 cmd mkdir %mkdir "$@"
+
+# create files
+cmd touch %touch "$@"
 
 # move current file or selected files to trash folder
 cmd trash %set -f; mv $fx ~/.local/share/Trash
