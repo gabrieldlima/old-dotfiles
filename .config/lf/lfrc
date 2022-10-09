@@ -59,6 +59,12 @@ map a push :mkdir<space>
 # create a new file
 map Mf push :touch<space>
 
+# move current file or selected files to trash folder
+map D push :trash<enter>
+
+# retore files from trash
+map R push :trash-restore<enter>
+
 
 # =============================================================================
 #                                FUNCIONS
@@ -70,8 +76,13 @@ cmd mkdir %mkdir "$@"
 # create files
 cmd touch %touch "$@"
 
-# move current file or selected files to trash folder
-cmd trash %set -f; mv $fx ~/.local/share/Trash
+# trash
+cmd trash %set -f; trash $fx
+
+# trash restore
+cmd trash-restore ${{
+    trash-restore
+}}
 
 # open files
 cmd open ${{
