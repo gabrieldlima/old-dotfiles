@@ -27,7 +27,7 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 # ALIASES
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias token='cat $HOME/.config/token | xclip -selection clipboard'
 alias ls='exa -l --group-directories-first --icons'
 alias ll='exa -l --group-directories-first --icons'
