@@ -53,6 +53,9 @@ map O open
 # toggle to show hidden files/folders
 map H push :set<space>hidden!<enter>
 
+# create a new folder
+map M push :mkdir<space>
+
 
 # =============================================================================
 #                                FUNCIONS
