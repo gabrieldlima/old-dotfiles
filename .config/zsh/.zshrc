@@ -39,7 +39,7 @@ alias cat='bat'
 alias vi='nvim'
 alias vim='nvim'
 alias lf='$HOME/.config/lf/lf-ueberzug'
-alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dot='/usr/bin/git --git-dir=$HOME/.local/share/dotfiles/ --work-tree=$HOME'
 alias token='cat $HOME/.config/token | xclip -selection clipboard'
 
 # PLUGINS
