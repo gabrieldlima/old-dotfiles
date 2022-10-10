@@ -63,8 +63,8 @@ cmd zip ${{
 
 map <c-n> push :mkdir<space>
 map <c-r> reload
-map <c-s> set hidden!
 map <enter> shell
+map H set hidden!
 map x $$f
 map X !$f
 map D delete
