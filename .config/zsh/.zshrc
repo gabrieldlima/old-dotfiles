@@ -27,16 +27,20 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 # ALIASES
-alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias token='cat $HOME/.config/token | xclip -selection clipboard'
 alias ls='exa -l --group-directories-first --icons'
 alias ll='exa -l --group-directories-first --icons'
 alias la='exa -la --group-directories-first --icons'
-alias cat='bat'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -iv'
 alias mkdir='mkdir -p'
-alias lf='$HOME/.config/lf/lf-ueberzug'
+alias rmdir='rmdir -p'
+alias cat='bat'
+alias vi='nvim'
 alias vim='nvim'
-alias v='nvim'
+alias lf='$HOME/.config/lf/lf-ueberzug'
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias token='cat $HOME/.config/token | xclip -selection clipboard'
 
 # PLUGINS
 source $HOME/.config/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
