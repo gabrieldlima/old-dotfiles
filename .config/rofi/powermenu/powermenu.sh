@@ -1,25 +1,25 @@
 #!/bin/env bash
 
 # CMDs
-lastlogin="`last $USER | head -n1 | tr -s ' ' | cut -d' ' -f5,6,7`"
+lastlogin=$(last | head -1 | awk '{print $3,$4,$5,$6}')
 uptime="`uptime -p | sed -e 's/up //g'`"
 host=`hostnamectl hostname`
 
 # Options
-hibernate=''
-shutdown=''
-reboot=''
-lock=''
-suspend=''
-logout=''
-yes=''
-no=''
+hibernate=''
+shutdown='⏻'
+reboot=''
+lock=''
+suspend=''
+logout=''
+yes='⏻'
+no='⏻'
 
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
 		-p " $USER@$host" \
-		-mesg " Last Login: $lastlogin |  Uptime: $uptime" \
+		-mesg " Last Login: $lastlogin |  Uptime: $uptime" \
 		-theme $HOME/.config/rofi/powermenu/rofi.rasi
 }
 

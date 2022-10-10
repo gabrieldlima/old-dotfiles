@@ -71,7 +71,7 @@ dummy {
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
-    str:                         "⏻ System";
+    str:                         "力 System";
     padding:                     12px;
     border-radius:               0px;
     background-color:            @background;

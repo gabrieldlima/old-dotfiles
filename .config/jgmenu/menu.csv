@@ -8,11 +8,11 @@
 ^sep()
 
  Lock, betterlockscreen -l dim
- Logout, bspc quit
+ Logout, bspc quit
  Exit, ^checkout(exit)
 
 ^tag(exit)
- Hibernate, systemctl hibernate
- Suspend, systemctl suspend
+ Hibernate, systemctl hibernate
+ Suspend, systemctl suspend
  Reboot, systemctl reboot
  Poweroff, systemctl poweroff
