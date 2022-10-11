@@ -8,11 +8,11 @@ super + Return
 
 # program launcher
 super + d
-	$HOME/.config/rofi/launcher/launcher.sh
+	$HOME/.config/rofi/launcher/launcher
 
 # powermenu
 super + p
-	$HOME/.config/rofi/powermenu/powermenu.sh
+	$HOME/.config/rofi/powermenu/powermenu
 
 # web browser
 super + b
@@ -36,11 +36,11 @@ super + shift + x
 
 # volume control
 super + F2
-    ponymix decrease 5 | notify.sh audio
+    ponymix decrease 5 | notify audio
 super + F3
-    ponymix increase 5 | notify.sh audio
+    ponymix increase 5 | notify audio
 super + F4
-    pulsemixer --toggle-mute --get-mute | notify.sh muted
+    pulsemixer --toggle-mute --get-mute | notify muted
 
 # =============================================================================
 # BSPWM HOTKEYS

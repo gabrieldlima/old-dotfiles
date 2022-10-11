@@ -23,7 +23,7 @@ rightclick = "Button3"
 terminal     = "alacritty"
 web_browser  = "brave"
 file_browser = "nautilus"
-launcher     = "/home/gabriel/.config/rofi/scripts/launcher.sh"
+launcher     = "/home/gabriel/.config/rofi/scripts/launcher"
 
 
 
@@ -379,5 +379,5 @@ wmname = "LG3D"
 
 @hook.subscribe.startup
 def autostart():
-    home = os.path.expanduser('~/.config/qtile/autostart.sh')
+    home = os.path.expanduser('~/.config/qtile/autostart')
     subprocess.run([home])

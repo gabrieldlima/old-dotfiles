@@ -30,4 +30,4 @@ bspc rule -a openrgb       state=floating follow=on
 bspc rule -a Piper         state=floating follow=on
 bspc rule -a Pavucontrol   state=floating follow=on
 
-$HOME/.config/bspwm/autostart.sh
+$HOME/.config/bspwm/autostart
