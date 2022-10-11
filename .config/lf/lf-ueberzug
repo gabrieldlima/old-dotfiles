@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/env zsh
 
 cleanup() {
 	$HOME/.config/lf/lf-ueberzug-cleaner

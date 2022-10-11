@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/env bash
 
 if [ $(xdotool getwindowfocus) -eq 1902 ]
 then

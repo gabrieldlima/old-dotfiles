@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/env bash
 
 preview() {
 	cat <<-EOF | paste -sd '' >"$LF_UEBERZUG_TEMPDIR/fifo"
