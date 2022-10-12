@@ -5,11 +5,7 @@ source $HOME/.config/zsh/.zprofile
 
 # ZSH OPTIONS
 setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_SAVE_NO_DUPS
-setopt HIST_REDUCE_BLANKS
-setopt INC_APPEND_HISTORY_TIME
-setopt COMPLETE_ALIASES
+setopt INC_APPEND_HISTORY
 
 # PROMPT
 eval "$(starship init zsh)"
@@ -42,6 +38,7 @@ alias vim='nvim'
 alias lf='$HOME/.config/lf/lf-ueberzug'
 alias dot='/usr/bin/git --git-dir=$HOME/.local/share/dotfiles/ --work-tree=$HOME'
 alias token='cat $HOME/.config/token | xclip -selection clipboard'
+alias history='history 1' 
 
 # PLUGINS
 source $HOME/.config/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
