@@ -6,6 +6,7 @@ source $HOME/.config/zsh/.zprofile
 # ZSH OPTIONS
 setopt HIST_IGNORE_ALL_DUPS
 setopt INC_APPEND_HISTORY
+setopt COMPLETE_ALIASES
 
 # PROMPT
 eval "$(starship init zsh)"
