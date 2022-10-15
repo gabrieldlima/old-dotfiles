@@ -5,8 +5,8 @@
 set shell sh
 set drawbox
 set icons true
-set previewer ~/.config/lf/lf-ueberzug-previewer
-set cleaner ~/.config/lf/lf-ueberzug-cleaner
+set cleaner '~/.config/lf/cleaner'
+set previewer '~/.config/lf/scope'
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10

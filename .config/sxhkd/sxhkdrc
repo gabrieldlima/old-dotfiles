@@ -20,7 +20,7 @@ super + b
 
 # file explorer
 super + e
-    alacritty -e $HOME/.config/lf/lf-ueberzug
+    alacritty -e lfub
 
 # make sxhkd reload its configuration files:
 super + Escape
