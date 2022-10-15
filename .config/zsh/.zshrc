@@ -33,6 +33,8 @@ alias rm='rm -iv'
 alias mkdir='mkdir -p'
 alias rmdir='rmdir -p'
 alias grep='grep --color=auto'
+alias diff="diff --color=auto"
+alias ip="ip -color"
 alias cat='bat'
 alias vi='nvim'
 alias vim='nvim'
