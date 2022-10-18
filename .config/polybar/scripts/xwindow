@@ -2,7 +2,7 @@
 
 if [ $(xdotool getwindowfocus) -eq 1902 ]
 then
-    echo "bspwm"
+    echo "BSPWM"
 else
     xprop -id $(xdotool getactivewindow) WM_CLASS | awk '{print $4}' | tr -d '",'
 fi
