@@ -54,6 +54,10 @@ super + alt + r
 super + shift + q
 	bspc node -{c,k}
 
+# cycle between floating and tiled windows
+super + space
+	bspc node -f {next,prev}.local.!hidden.window; bspc node last.local --layer below; bspc node focused --layer normal
+
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
