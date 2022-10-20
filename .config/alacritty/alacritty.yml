@@ -192,7 +192,7 @@ draw_bold_text_with_bright_colors: true
 colors:
   primary:
     background: '#0d1117'
-    foreground: '#adbac7'
+    foreground: '#c9d1d9'
   normal:
     black:   '#2d333b'
     red:     '#f47067'
