@@ -24,17 +24,19 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 # ALIASES
-alias ls='exa -l --group-directories-first --icons'
-alias ll='exa -l --group-directories-first --icons'
-alias la='exa -la --group-directories-first --icons'
+alias ls='exa --long --group-directories-first --icons'
+alias ll='exa --long --group-directories-first --icons'
+alias la='exa --long --all --group-directories-first --icons'
+alias lt='exa --long --tree --group-directories-first --icons'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
 alias mkdir='mkdir -p'
 alias rmdir='rmdir -p'
 alias grep='grep --color=auto'
-alias diff="diff --color=auto"
-alias ip="ip -color"
+alias diff='diff --color=auto'
+alias tree='tree -C'
+alias ip='ip -color'
 alias cat='bat'
 alias vi='nvim'
 alias vim='nvim'
