@@ -1,4 +1,4 @@
- Restart Bspwm, bspc wm -r
+舘 Restart Bspwm, bspc wm -r
  Restart Sxhkd, pkill -USR1 -x sxhkd
  Restart Polybar, $HOME/.config/polybar/launch
 ^sep()
