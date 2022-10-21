@@ -1,6 +1,6 @@
  Restart Bspwm, bspc wm -r
  Restart Sxhkd, pkill -USR1 -x sxhkd
- Restart Polybar, $HOME/.config/polybar/launch.sh
+ Restart Polybar, $HOME/.config/polybar/launch
 ^sep()
 
  Find Window Class, dunstify -i window_list "Find Window Class" "$(xprop WM_CLASS | tr -d '\n' | xclip -sel c -f)"
