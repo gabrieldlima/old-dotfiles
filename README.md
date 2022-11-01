@@ -1,2 +1,1 @@
-# dotfiles
-This repository contains my personal dotfiles. 
+![img](.config/bspwm/screenshots/0.png)
