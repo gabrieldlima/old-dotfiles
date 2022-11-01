@@ -1,5 +1,5 @@
 # Programs I use:
-<img width="590px" align="right" src=".config/bspwm/screenshots/0.png"/>
+<img width="550px" align="right" src=".config/bspwm/screenshots/0.png"/>
 
 + **OS**: [Arch Linux](https://archlinux.org/)
 + **WM**: [Bspwm](https://github.com/baskerville/bspwm)
