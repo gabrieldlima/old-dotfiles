@@ -1,28 +1,17 @@
-<img src=".config/bspwm/screenshots/0.png" alt="img" align="right" width="600px">
-### Here are some details about my setup:
-
-+ **OS**: [Arch Linux](https://archlinux.org/)
-+ **WM**: [bspwm](https://github.com/baskerville/bspwm)
-+ **Compositor**: [picom](https://github.com/yshui/picom)
-+ **Bar**: [polybar](https://github.com/polybar/polybar)
-+ **Launcher**: [rofi](https://github.com/davatorium/rofi)
-+ **Menu**: [jgmenu](https://github.com/jgmenu/jgmenu)
-+ **Top**: [bpytop](https://github.com/aristocratos/bpytop)
-+ **Fetch**: [neofetch](https://github.com/dylanaraps/neofetch)
-+ **Shell**: [zsh](https://www.zsh.org/)
-+ **Terminal**: [alacritty](https://github.com/alacritty/alacritty)
-+ **Editor**: [neovim](https://github.com/neovim/neovim)
-+ **File Manager**: [lf](https://github.com/gokcehan/lf)
-+ **Browser**: [brave](https://brave.com/)
-+ **PDF Viewer**: [zathura](https://github.com/pwmt/zathura)
-+ **Font**: [jetbrains-mono](https://github.com/JetBrains/JetBrainsMono)
-+ **Screenshot**: [flameshot](https://github.com/flameshot-org/flameshot)
-
+![img](.config/bspwm/screenshots/0.png)
+---
 ![img](.config/bspwm/screenshots/1.png)
+---
 ![img](.config/bspwm/screenshots/2.png)
+---
 ![img](.config/bspwm/screenshots/3.png)
+---
 ![img](.config/bspwm/screenshots/4.png)
+---
 ![img](.config/bspwm/screenshots/5.png)
+---
 ![img](.config/bspwm/screenshots/6.png)
+---
 ![img](.config/bspwm/screenshots/7.png)
+---
 ![img](.config/bspwm/screenshots/8.png)
