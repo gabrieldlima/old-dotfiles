@@ -1,6 +1,6 @@
-# Programs I use:
-<img width="550px" align="right" src=".config/bspwm/screenshots/0.png"/>
+# DOTFILES
 
+### Programs I use:
 + **OS**: [Arch Linux](https://archlinux.org/)
 + **WM**: [Bspwm](https://github.com/baskerville/bspwm)
 + **Compositor**: [Picom](https://github.com/yshui/picom)
@@ -14,19 +14,10 @@
 + **File Manager**: [Lf](https://github.com/gokcehan/lf)
 + **PDF Viewer**: [Zathura](https://github.com/pwmt/zathura)
 + **Fonts**: [JetBrains Mono Nerd Font](https://github.com/JetBrains/JetBrainsMono)
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
-## Screeshots:
+### Screenshots:
+![img](.config/bspwm/screenshots/0.png)
+---
 ![img](.config/bspwm/screenshots/1.png)
 ---
 ![img](.config/bspwm/screenshots/2.png)
