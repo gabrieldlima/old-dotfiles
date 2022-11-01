@@ -1,4 +1,4 @@
-# DOTFILES
+## My personal dotfiles
 
 ### Programs I use:
 + **OS**: [Arch Linux](https://archlinux.org/)
