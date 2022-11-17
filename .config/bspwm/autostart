@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-picom --experimental-backend &
+picom &
 nitrogen --restore &
 xsetroot -cursor_name left_ptr &
 clipit-applet &
