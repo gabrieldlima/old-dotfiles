@@ -14,22 +14,3 @@
 + **File Manager**: [Lf](https://github.com/gokcehan/lf)
 + **PDF Viewer**: [Zathura](https://github.com/pwmt/zathura)
 + **Fonts**: [JetBrains Mono Nerd Font](https://github.com/JetBrains/JetBrainsMono)
-
-### Screenshots:
-![img](.config/bspwm/screenshots/0.png)
----
-![img](.config/bspwm/screenshots/1.png)
----
-![img](.config/bspwm/screenshots/2.png)
----
-![img](.config/bspwm/screenshots/3.png)
----
-![img](.config/bspwm/screenshots/4.png)
----
-![img](.config/bspwm/screenshots/5.png)
----
-![img](.config/bspwm/screenshots/6.png)
----
-![img](.config/bspwm/screenshots/7.png)
----
-![img](.config/bspwm/screenshots/8.png)
