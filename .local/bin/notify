@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 ### Audio notifications ###
 #   ponymix increase 5 | notify audio
