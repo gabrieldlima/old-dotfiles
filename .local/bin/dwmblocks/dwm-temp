@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+temp=$(sensors | awk '/id 0/ {print $4}' | sed 's/+//g')
+echo "$temp"

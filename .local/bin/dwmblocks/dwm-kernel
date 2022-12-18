@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+kernel=$(uname -r | sed 's/-.*//g')
+echo "$kernel"

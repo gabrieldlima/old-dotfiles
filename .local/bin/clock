@@ -1,4 +1,0 @@
-#!/bin/env bash
-
-date=$(date "+%a %b %d %I:%M %p")
-echo "$date"
