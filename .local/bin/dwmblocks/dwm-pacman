@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 updates=$(yay -Qu &> /dev/null | wc -l)
-echo "$updates updates"
+echo "$updates"
