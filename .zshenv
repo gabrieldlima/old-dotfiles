@@ -15,11 +15,17 @@ export SAVEHIST=10000
 export PATH="$HOME/.local/bin/:$PATH"
 
 export FZF_DEFAULT_COMMAND="fd --type=file --strip-cwd-prefix --hidden --follow --exclude '.git'"
-export FZF_DEFAULT_OPTS="--layout=reverse --height 40% --info=hidden --color=16 --prompt='➜ ' --pointer='➜ ' --marker='➜ '"
+export FZF_DEFAULT_OPTS="--layout=reverse --height 40% --info=hidden --color=16 --prompt='➜ ' --pointer='➜ ' --marker='➜ ' \
+    --color=bg+:#313244,bg:#11111b,spinner:#f5e0dc,hl:#f38ba8 \
+    --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+    --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="$FZF_DEFAULT_OPTS"
 export FZF_ALT_C_COMMAND="fd --type=directory --strip-cwd-prefix --hidden --follow --exclude '.git'"
-export FZF_ALT_C_OPTS="--layout=reverse --height 40% --info=hidden --color=16 --prompt='➜ ' --pointer='➜ ' --marker='➜ '"
+export FZF_ALT_C_OPTS="--layout=reverse --height 40% --info=hidden --color=16 --prompt='➜ ' --pointer='➜ ' --marker='➜ ' \
+    --color=bg+:#313244,bg:#11111b,spinner:#f5e0dc,hl:#f38ba8 \
+    --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+    --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
