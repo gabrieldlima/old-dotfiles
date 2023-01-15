@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 clock=$(date "+%I:%M %p")
-echo "$clock"
+echo " $clock"

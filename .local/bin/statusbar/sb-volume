@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+volume=$(pactl list sinks | grep '^[[:space:]]Volume:' | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')
+mute=$(pactl list sinks | grep 'Mute:' | awk '{print $2}')
+
+if [ "$mute" = 'yes' ]; then
+    echo '婢' 'mute';
+else
+    echo '墳' "$volume%";
+fi
