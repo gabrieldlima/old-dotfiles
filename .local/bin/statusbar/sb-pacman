@@ -1,16 +1,4 @@
 #!/usr/bin/env bash
 
-icon=
-
-if [ ! -f $HOME/.cache/pacman_updates ]; then
-    updates=0
-else
-    updates=$(wc -l < $HOME/.cache/pacman_updates)
-    if [ "$updates" = "" ]; then
-        updates=0
-    fi
-fi
-
-checkupdates 2> /dev/null > $HOME/.cache/pacman_updates &
-
-echo "$icon $updates"
+updates=$(checkupdates 2> /dev/null | wc -l)
+echo " $updates"
