@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+network=$(/bin/cat /sys/class/net/wlo1/operstate)
+
+if [[ $network == 'up' ]]; then
+    echo '直 up'
+else
+    echo '睊 down'
+fi
