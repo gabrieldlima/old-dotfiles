@@ -12,7 +12,7 @@ export HISTFILE=$HOME/.config/zsh/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000
 
-export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.local/bin/:$HOME/.local/bin/statusbar/:$PATH"
 
 export FZF_DEFAULT_COMMAND="fd --type=file --strip-cwd-prefix --hidden --follow --exclude '.git'"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40% --info=hidden --color=16 --prompt='➜ ' --pointer='➜ ' --marker='➜ ' \
