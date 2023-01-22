@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+keyboard=$(setxkbmap -query | awk '/layout/{ print $2 }')
+icon=""
+
+if [[ "$1" == toogle && "$keyboard" == 'us' ]]; then
+    setxkbmap br abnt2
+    echo "$icon br"
+elif [[ "$1" == toogle && "$keyboard" == 'br' ]]; then
+    setxkbmap us
+    echo "$icon us"
+else
+    echo "$icon $keyboard"
+fi

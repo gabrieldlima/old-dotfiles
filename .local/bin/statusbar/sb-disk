@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+disk=$(df -h | grep "/dev/sda2" | awk '{print $4}')
+echo " $disk"
