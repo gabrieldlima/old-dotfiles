@@ -8,9 +8,9 @@ add_newline = false
 format = "$all"
 
 [character] 
-success_symbol = "[λ](bold green)"
-error_symbol = "[λ](bold red)"
-vicmd_symbol = "[](bold yellow)"
+success_symbol = "[](bold green)"
+error_symbol = "[](bold red)"
+vicmd_symbol = "[](bold yellow)"
 
 # Nerd Font Symbols
 [aws]
