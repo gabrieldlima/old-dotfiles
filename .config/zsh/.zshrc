@@ -46,8 +46,8 @@ alias token='cat $HOME/.config/token | xclip -selection clipboard'
 alias history='history 1'
 
 # FZF
-source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/key-bindings.zsh
+source $HOME/.config/zsh/fzf/completion.zsh
+source $HOME/.config/zsh/fzf/key-bindings.zsh
 
 # PLUGINS
 source $HOME/.config/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
