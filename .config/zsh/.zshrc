@@ -40,6 +40,7 @@ alias ip='ip -color'
 alias cat='bat'
 alias vi='nvim'
 alias vim='nvim'
+alias df="duf"
 alias lf='lfub'
 alias dot='/usr/bin/git --git-dir=$HOME/.local/share/dotfiles/ --work-tree=$HOME'
 alias token='cat $HOME/.config/token | xclip -selection clipboard'
