@@ -5,6 +5,8 @@ custom.background = "#11111b"
 
 return {
     check_for_updates = false,
+    enable_tab_bar = true,
+    hide_tab_bar_if_only_one_tab = true,
     font = wezterm.font 'Fira Code',
     font_size = 10.0,
 
