@@ -4,7 +4,7 @@
 + **OS**: [gentoo](https://www.gentoo.org/)
 + **WM**: [dwm](https://dwm.suckless.org/)
 + **Shell**: [zsh](https://www.zsh.org/)
-+ **Terminal**: [st](https://st.suckless.org/)
++ **Terminal**: [wezterm](https://github.com/wez/wezterm)
 + **Editor**: [neovim](https://github.com/neovim/neovim)
 + **Launcher**: [dmenu](https://tools.suckless.org/dmenu/)
 + **Compositor**: [picom](https://github.com/yshui/picom)
