@@ -8,4 +8,7 @@ return {
         ["Catppuccin_Mocha"] = custom,
     },
     color_scheme = "Catppuccin_Mocha",
+
+    font = wezterm.font 'Fira Code',
+    font_size = 10.0
 }
