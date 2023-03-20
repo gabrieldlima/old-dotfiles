@@ -4,15 +4,15 @@ palette = "catppuccin_mocha"
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
-add_newline = false
+add_newline = true
 
 # Default prompt format 
 format = "$all"
 
 [character] 
-success_symbol = "[](bold green)"
-error_symbol = "[](bold red)"
-vicmd_symbol = "[](bold yellow)"
+success_symbol = "[󰈸](bold green)"
+error_symbol = "[󰈸](bold red)"
+vicmd_symbol = "[󰈸](bold yellow)"
 
 # Nerd Font Symbols
 [aws]
