@@ -39,8 +39,8 @@ return {
         { key = 'L', mods = "LEADER", action = act.AdjustPaneSize { "Right", 5} },
 
         -- Copy and Paste
-        { key = 'c', mods = "SHIFT|CTRL", action = act.Copy },
-        { key = 'v', mods = "SHIFT|CTRL", action = act.Paste }
+        { key = 'c', mods = "SHIFT|CTRL", action = act.CopyTo "ClipboardAndPrimarySelection" },
+        { key = 'v', mods = "SHIFT|CTRL", action = act.PasteFrom "Clipboard" }
     },
 
     -- Fonts
