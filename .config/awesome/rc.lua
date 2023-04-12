@@ -42,6 +42,7 @@ beautiful.init(home .. ".config/awesome/theme.lua")
 terminal = "wezterm"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
+launcher = "dmenu_run"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -214,8 +215,8 @@ awful.keyboard.append_global_keybindings({
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
               {description = "run prompt", group = "launcher"}),
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"}),
+    awful.key({ modkey }, "p", function() awful.spawn(launcher, false) end,
+              {description = "show the dmenu", group = "launcher"}),
 })
 
 -- Tags related keybindings
