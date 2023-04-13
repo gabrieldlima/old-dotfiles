@@ -3,7 +3,7 @@ local rnotification = require("ruled.notification")
 local xresources    = require("beautiful.xresources")
 local dpi           = xresources.apply_dpi
 
-local themes_path = "home/gabriel/.config/awesome/icons/layouts/"
+local themes_path = "/home/gabriel/.config/awesome/icons/layouts/"
 
 local theme = {}
 
