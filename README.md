@@ -2,7 +2,7 @@
 
 ### Programs I use:
 + **OS**: [gentoo](https://www.gentoo.org/)
-+ **WM**: [dwm](https://dwm.suckless.org/)
++ **WM**: [awesomewm](https://github.com/awesomeWM/awesome)
 + **Shell**: [zsh](https://www.zsh.org/)
 + **Terminal**: [wezterm](https://github.com/wez/wezterm)
 + **Editor**: [neovim](https://github.com/neovim/neovim)
