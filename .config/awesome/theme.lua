@@ -8,24 +8,24 @@ local themes_path = "/home/gabriel/.config/awesome/icons/layouts/"
 local theme = {}
 
 -- Default variables
-theme.useless_gap                    = dpi(0)
+theme.useless_gap                    = dpi(5)
 theme.font                           = "FiraCode Nerd Font 8"
-theme.bg_normal                      = "#222222"
-theme.bg_focus                       = "#535d6c"
-theme.bg_urgent                      = "#ff0000"
-theme.bg_minimize                    = "#444444"
-theme.fg_normal                      = "#aaaaaa"
-theme.fg_focus                       = "#ffffff"
-theme.fg_urgent                      = "#ffffff"
-theme.fg_minimize                    = "#ffffff"
+theme.bg_normal                      = "#11111b"
+theme.bg_focus                       = "#b4befe"
+theme.bg_urgent                      = "#11111b"
+theme.bg_minimize                    = "#11111b"
+theme.fg_normal                      = "#cdd6f4"
+theme.fg_focus                       = "#11111b"
+theme.fg_urgent                      = "#cdd6f4"
+theme.fg_minimize                    = "#cdd6f4"
 -- theme.wallpaper = nil
-theme.bg_systray                     = "#222222"
-theme.border_color_marked            = "#91231c"
+theme.bg_systray                     = "#11111b"
+theme.border_color_marked            = "#11111b"
 -- theme.border_color_floating          = nil
 -- theme.border_color_maximized         = nil
 -- theme.border_color_fullscreen        = nil
-theme.border_color_active            = "#535d6c"
-theme.border_color_normal            = "#000000"
+theme.border_color_active            = "#b4befe"
+theme.border_color_normal            = "#11111b"
 -- theme.border_color_urgent            = nil
 -- theme.border_color_new               = nil
 -- theme.border_color_floating_active   = nil
@@ -40,7 +40,7 @@ theme.border_color_normal            = "#000000"
 -- theme.border_color_fullscreen_normal = nil
 -- theme.border_color_fullscreen_urgent = nil
 -- theme.border_color_fullscreen_new    = nil
-theme.border_width                   = dpi(1)
+theme.border_width                   = dpi(3)
 -- theme.border_width_floating          = nil
 -- theme.border_width_maximized         = nil
 -- theme.border_width_normal            = nil
@@ -108,10 +108,10 @@ theme.border_width                   = dpi(1)
 -- theme.flex_height = nil
 
 -- fullscreen
--- theme.fullscreen_hide_border = nil
+theme.fullscreen_hide_border = true
 
 -- gap
--- theme.gap_single_client = nil
+theme.gap_single_client = true
 
 -- graph
 -- theme.graph_fg = nil
@@ -119,20 +119,20 @@ theme.border_width                   = dpi(1)
 -- theme.graph_border_color = nil
 
 -- hotkeys
--- theme.hotkeys_bg = nil
--- theme.hotkeys_fg = nil
--- theme.hotkeys_border_width = nil
--- theme.hotkeys_border_color = nil
--- theme.hotkeys_shape = nil
--- theme.hotkeys_modifiers_fg = nil
--- theme.hotkeys_label_bg = nil
--- theme.hotkeys_label_fg = nil
--- theme.hotkeys_font = nil
--- theme.hotkeys_description_font = nil
--- theme.hotkeys_group_margin = nil
+theme.hotkeys_bg               = "#11111b"
+theme.hotkeys_fg               = "#a6adc8"
+theme.hotkeys_border_width     = dpi(3)
+theme.hotkeys_border_color     = "#b4befe"
+-- theme.hotkeys_shape            = nil
+theme.hotkeys_modifiers_fg     = "#cdd6f4"
+theme.hotkeys_label_bg         = "#b4befe"
+theme.hotkeys_label_fg         = "#11111b"
+theme.hotkeys_font             = "FiraCode Nerd Font Bold 8"
+theme.hotkeys_description_font = "FiraCode Nerd Font Medium Italic 8"
+theme.hotkeys_group_margin     = 10
 
 -- icon
-theme.icon_theme = nil
+-- theme.icon_theme = nil
 
 -- layout
 theme.layout_fairh      = themes_path .. "fairhw.png"
@@ -181,15 +181,15 @@ theme.layout_cornerse   = themes_path .. "cornersew.png"
 
 -- menu
 -- theme.menu_submenu_icon = nil
--- theme.menu_font         = nil
-theme.menu_height       = dpi(15)
-theme.menu_width        = dpi(100)
--- theme.menu_border_color = nil
--- theme.menu_border_width = nil
--- theme.menu_fg_focus     = nil
--- theme.menu_bg_focus     = nil
--- theme.menu_fg_normal    = nil
--- theme.menu_bg_normal    = nil
+theme.menu_font         = "FiraCode Nerd Font Medium 8"
+theme.menu_height       = dpi(20)
+theme.menu_width        = dpi(120)
+theme.menu_border_color = "#b4befe"
+theme.menu_border_width = dpi(1)
+theme.menu_fg_focus     = "#11111b"
+theme.menu_bg_focus     = "#b4befe"
+theme.menu_fg_normal    = "#cdd6f4"
+theme.menu_bg_normal    = "#11111b"
 -- theme.menu_submenu      = nil
 
 -- menubar
@@ -296,11 +296,11 @@ end)
 -- theme.progressbar_paddings = nil
 
 -- prompt
--- theme.prompt_fg_cursor = nil
--- theme.prompt_bg_cursor = nil
--- theme.prompt_font = nil
--- theme.prompt_fg = nil
--- theme.prompt_bg = nil
+theme.prompt_fg_cursor = "#11111b"
+theme.prompt_bg_cursor = "#cdd6f4"
+theme.prompt_font      = "FiraCode Nerd Font Medium 8"
+theme.prompt_fg        = "#cdd6f4"
+theme.prompt_bg        = "#11111b"
 
 -- radialprogressbar
 -- theme.radialprogressbar_border_color = nil
@@ -349,37 +349,37 @@ end)
 -- theme.systray_icon_spacing = nil
 
 -- taglist
--- theme.taglist_fg_focus = nil
--- theme.taglist_bg_focus = nil
--- theme.taglist_fg_urgent = nil
--- theme.taglist_bg_urgent = nil
--- theme.taglist_bg_occupied = nil
--- theme.taglist_fg_occupied = nil
--- theme.taglist_bg_empty = nil
--- theme.taglist_fg_empty = nil
--- theme.taglist_bg_volatile = nil
--- theme.taglist_fg_volatile = nil
--- theme.taglist_squares_sel = nil
--- theme.taglist_squares_unsel = nil
--- theme.taglist_squares_sel_empty = nil
--- theme.taglist_squares_unsel_empty = nil
--- theme.taglist_squares_resize = nil
--- theme.taglist_disable_icon = nil
--- theme.taglist_font = nil
--- theme.taglist_spacing = nil
--- theme.taglist_shape = nil
--- theme.taglist_shape_border_width = nil
--- theme.taglist_shape_border_color = nil
--- theme.taglist_shape_empty = nil
--- theme.taglist_shape_border_width_empty = nil
--- theme.taglist_shape_border_color_empty = nil
--- theme.taglist_shape_focus = nil
--- theme.taglist_shape_border_width_focus = nil
--- theme.taglist_shape_border_color_focus = nil
--- theme.taglist_shape_urgent = nil
--- theme.taglist_shape_border_width_urgent = nil
--- theme.taglist_shape_border_color_urgent = nil
--- theme.taglist_shape_volatile = nil
+theme.taglist_fg_focus                    = "#11111b"
+theme.taglist_bg_focus                    = "#b4befe"
+-- theme.taglist_fg_urgent                   = nil
+-- theme.taglist_bg_urgent                   = nil
+theme.taglist_bg_occupied                 = "#11111b"
+theme.taglist_fg_occupied                 = "#cdd6f4"
+theme.taglist_bg_empty                    = "#11111b"
+theme.taglist_fg_empty                    = "#7f849c"
+-- theme.taglist_bg_volatile                 = nil
+-- theme.taglist_fg_volatile                 = nil
+-- theme.taglist_squares_sel                 = nil
+-- theme.taglist_squares_unsel               = nil
+-- theme.taglist_squares_sel_empty           = nil
+-- theme.taglist_squares_unsel_empty         = nil
+-- theme.taglist_squares_resize              = nil
+-- theme.taglist_disable_icon                = nil
+theme.taglist_font                        = "FiraCode Nerd Font Bold 15"
+theme.taglist_spacing                     = 5
+-- theme.taglist_shape                       = nil
+-- theme.taglist_shape_border_width          = nil
+-- theme.taglist_shape_border_color          = nil
+-- theme.taglist_shape_empty                 = nil
+-- theme.taglist_shape_border_width_empty    = nil
+-- theme.taglist_shape_border_color_empty    = nil
+-- theme.taglist_shape_focus                 = nil
+-- theme.taglist_shape_border_width_focus    = nil
+-- theme.taglist_shape_border_color_focus    = nil
+-- theme.taglist_shape_urgent                = nil
+-- theme.taglist_shape_border_width_urgent   = nil
+-- theme.taglist_shape_border_color_urgent   = nil
+-- theme.taglist_shape_volatile              = nil
 -- theme.taglist_shape_border_width_volatile = nil
 -- theme.taglist_shape_border_color_volatile = nil
 -- Generate taglist squares:
@@ -392,49 +392,49 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 )
 
 -- tasklist
--- theme.tasklist_fg_normal = nil
--- theme.tasklist_bg_normal = nil
--- theme.tasklist_fg_focus = nil
--- theme.tasklist_bg_focus = nil
--- theme.tasklist_fg_urgent = nil
--- theme.tasklist_bg_urgent = nil
--- theme.tasklist_fg_minimize = nil
--- theme.tasklist_bg_minimize = nil
--- theme.tasklist_bg_image_normal = nil
--- theme.tasklist_bg_image_focus = nil
--- theme.tasklist_bg_image_urgent = nil
--- theme.tasklist_bg_image_minimize = nil
--- theme.tasklist_disable_icon = nil
--- theme.tasklist_disable_task_name = nil
--- theme.tasklist_plain_task_name = nil
--- theme.tasklist_sticky = nil
--- theme.tasklist_ontop = nil
--- theme.tasklist_above = nil
--- theme.tasklist_below = nil
--- theme.tasklist_floating = nil
--- theme.tasklist_maximized = nil
--- theme.tasklist_maximized_horizontal = nil
--- theme.tasklist_maximized_vertical = nil
--- theme.tasklist_minimized = nil
--- theme.tasklist_align = nil
--- theme.tasklist_font = nil
--- theme.tasklist_font_focus = nil
--- theme.tasklist_font_minimized = nil
--- theme.tasklist_font_urgent = nil
--- theme.tasklist_spacing = nil
--- theme.tasklist_shape = nil
--- theme.tasklist_shape_border_width = nil
--- theme.tasklist_shape_border_color = nil
--- theme.tasklist_shape_focus = nil
--- theme.tasklist_shape_border_width_focus = nil
--- theme.tasklist_shape_border_color_focus = nil
--- theme.tasklist_shape_minimized = nil
+-- theme.tasklist_fg_normal                    = nil
+theme.tasklist_bg_normal                    = nil
+theme.tasklist_fg_focus                     = "#cdd6f4"
+theme.tasklist_bg_focus                     = "#11111b"
+-- theme.tasklist_fg_urgent                    = nil
+-- theme.tasklist_bg_urgent                    = nil
+-- theme.tasklist_fg_minimize                  = nil
+-- theme.tasklist_bg_minimize                  = nil
+-- theme.tasklist_bg_image_normal              = nil
+-- theme.tasklist_bg_image_focus               = nil
+-- theme.tasklist_bg_image_urgent              = nil
+-- theme.tasklist_bg_image_minimize            = nil
+theme.tasklist_disable_icon                 = true
+-- theme.tasklist_disable_task_name            = nil
+-- theme.tasklist_plain_task_name              = nil
+-- theme.tasklist_sticky                       = nil
+-- theme.tasklist_ontop                        = nil
+-- theme.tasklist_above                        = nil
+-- theme.tasklist_below                        = nil
+-- theme.tasklist_floating                     = nil
+-- theme.tasklist_maximized                    = nil
+-- theme.tasklist_maximized_horizontal         = nil
+-- theme.tasklist_maximized_vertical           = nil
+-- theme.tasklist_minimized                    = nil
+-- theme.tasklist_align                        = nil
+theme.tasklist_font                         = "FiraCode Nerd Font Bold 8"
+-- theme.tasklist_font_focus                   = nil
+-- theme.tasklist_font_minimized               = nil
+-- theme.tasklist_font_urgent                  = nil
+-- theme.tasklist_spacing                      = nil
+-- theme.tasklist_shape                        = nil
+-- theme.tasklist_shape_border_width           = nil
+-- theme.tasklist_shape_border_color           = nil
+-- theme.tasklist_shape_focus                  = nil
+-- theme.tasklist_shape_border_width_focus     = nil
+-- theme.tasklist_shape_border_color_focus     = nil
+-- theme.tasklist_shape_minimized              = nil
 -- theme.tasklist_shape_border_width_minimized = nil
 -- theme.tasklist_shape_border_color_minimized = nil
--- theme.tasklist_shape_urgent = nil
--- theme.tasklist_shape_border_width_urgent = nil
--- theme.tasklist_shape_border_color_urgent = nil
--- theme.tasklist_icon_size = nil
+-- theme.tasklist_shape_urgent                 = nil
+-- theme.tasklist_shape_border_width_urgent    = nil
+-- theme.tasklist_shape_border_color_urgent    = nil
+-- theme.tasklist_icon_size                    = nil
 
 -- titlebar
 -- theme.titlebar_fg_normal = nil
