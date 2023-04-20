@@ -52,7 +52,7 @@ beautiful.init(home .. ".config/awesome/theme.lua")
 myawesomemenu = {
     { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
     { "manual", terminal .. " -e man awesome" },
-    { "edit config", editor_cmd .. " " .. awesome.conffile },
+    { "edit config", terminal .. " -e " .. editor .. " " .. awesome.conffile },
     { "restart", awesome.restart },
     { "quit", function() awesome.quit() end },
 }
@@ -123,20 +123,20 @@ screen.connect_signal("request::desktop_decoration", function(s)
         screen  = s,
         filter  = awful.widget.taglist.filter.all,
         buttons = {
-            awful.button({ }, 1, function(t) t:view_only() end),
-            awful.button({ modkey }, 1, function(t)
+            awful.button({ }, leftclick, function(t) t:view_only() end),
+            awful.button({ modkey }, leftclick, function(t)
                 if client.focus then
                     client.focus:move_to_tag(t)
                 end
             end),
-            awful.button({ }, 3, awful.tag.viewtoggle),
-            awful.button({ modkey }, 3, function(t)
+            awful.button({ }, rightclick, awful.tag.viewtoggle),
+            awful.button({ modkey }, rightclick, function(t)
                 if client.focus then
                     client.focus:toggle_tag(t)
                 end
             end),
-            awful.button({ }, 4, function(t) awful.tag.viewprev(t.screen) end),
-            awful.button({ }, 5, function(t) awful.tag.viewnext(t.screen) end),
+            awful.button({ }, scrollup, function(t) awful.tag.viewprev(t.screen) end),
+            awful.button({ }, scrolldowm, function(t) awful.tag.viewnext(t.screen) end),
         }
     }
 
@@ -176,16 +176,6 @@ screen.connect_signal("request::desktop_decoration", function(s)
         }
     }
 end)
-
-
---------------------
--- Mouse bindings --
---------------------
-awful.mouse.append_global_mousebindings({
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
-    awful.button({ }, 4, awful.tag.viewprev),
-    awful.button({ }, 5, awful.tag.viewnext),
-})
 
 
 -----------
