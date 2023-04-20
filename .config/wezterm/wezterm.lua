@@ -52,4 +52,5 @@ return {
         ["Catppuccin_Mocha"] = custom,
     },
     color_scheme = "Catppuccin_Mocha",
+    window_background_opacity = 0.95
 }
