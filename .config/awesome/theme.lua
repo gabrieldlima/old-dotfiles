@@ -393,7 +393,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 
 -- tasklist
 -- theme.tasklist_fg_normal                    = nil
-theme.tasklist_bg_normal                    = nil
+-- theme.tasklist_bg_normal                    = nil
 theme.tasklist_fg_focus                     = "#cdd6f4"
 theme.tasklist_bg_focus                     = "#11111b"
 -- theme.tasklist_fg_urgent                    = nil
@@ -406,7 +406,7 @@ theme.tasklist_bg_focus                     = "#11111b"
 -- theme.tasklist_bg_image_minimize            = nil
 theme.tasklist_disable_icon                 = true
 -- theme.tasklist_disable_task_name            = nil
--- theme.tasklist_plain_task_name              = nil
+theme.tasklist_plain_task_name              = false
 -- theme.tasklist_sticky                       = nil
 -- theme.tasklist_ontop                        = nil
 -- theme.tasklist_above                        = nil
