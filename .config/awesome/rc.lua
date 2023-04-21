@@ -92,9 +92,6 @@ end)
 -----------
 -- Wibar --
 -----------
--- Create a textclock widget
-mytextclock = wibox.widget.textclock()
-
 screen.connect_signal("request::desktop_decoration", function(s)
     -- Each screen has its own tag table.
     -- awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
@@ -102,7 +99,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 
     -- Create an imagebox widget which will contain an icon indicating which layout we're using.
     -- We need one layoutbox per screen.
-    s.mylayoutbox = awful.widget.layoutbox {
+    s.layoutbox_widget = awful.widget.layoutbox {
         screen  = s,
         buttons = {
             awful.button({ }, 1, function () awful.layout.inc( 1) end),
@@ -113,7 +110,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
     }
 
     -- Create a taglist widget
-    s.mytaglist = awful.widget.taglist {
+    s.taglist_widget = awful.widget.taglist {
         screen  = s,
         filter  = awful.widget.taglist.filter.all,
         buttons = {
@@ -153,27 +150,33 @@ screen.connect_signal("request::desktop_decoration", function(s)
     }
 
     -- Create a tasklist widget
-    s.mytasklist = awful.widget.tasklist {
+    s.tasklist_widget = awful.widget.tasklist {
         screen  = s,
         filter  = awful.widget.tasklist.filter.focused,
     }
 
+    -- Create a textclock widget
+    s.textclock_widget = wibox.widget {
+        format = "%a %b %d %I:%M %p ",
+        widget = wibox.widget.textclock
+    }
+
     -- Create the wibox
-    s.mywibox = awful.wibar {
+    s.wibox = awful.wibar {
         position = "top",
         screen   = s,
         widget   = {
             layout = wibox.layout.align.horizontal,
             { -- Left widgets
                 layout = wibox.layout.fixed.horizontal,
-                s.mytaglist,
+                s.taglist_widget,
             },
-            s.mytasklist, -- Middle widget
+            s.tasklist_widget, -- Middle widget
             { -- Right widgets
                 layout = wibox.layout.fixed.horizontal,
                 wibox.widget.systray(),
-                mytextclock,
-                s.mylayoutbox,
+                s.textclock_widget,
+                s.layoutbox_widget,
             },
         }
     }
