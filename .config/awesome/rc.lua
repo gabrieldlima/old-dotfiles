@@ -94,20 +94,7 @@ end)
 -----------
 screen.connect_signal("request::desktop_decoration", function(s)
     -- Each screen has its own tag table.
-    -- awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
     awful.tag({ "󰬺", "󰬻", "󰬼", "󰬽", "󰬾", "󰬿", "󰭀", "󰭁", "󰭂" }, s, awful.layout.layouts[1])
-
-    -- Create an imagebox widget which will contain an icon indicating which layout we're using.
-    -- We need one layoutbox per screen.
-    s.layoutbox_widget = awful.widget.layoutbox {
-        screen  = s,
-        buttons = {
-            awful.button({ }, 1, function () awful.layout.inc( 1) end),
-            awful.button({ }, 3, function () awful.layout.inc(-1) end),
-            awful.button({ }, 4, function () awful.layout.inc(-1) end),
-            awful.button({ }, 5, function () awful.layout.inc( 1) end),
-        }
-    }
 
     -- Create a taglist widget
     s.taglist_widget = awful.widget.taglist {
@@ -159,6 +146,21 @@ screen.connect_signal("request::desktop_decoration", function(s)
     s.textclock_widget = wibox.widget {
         format = "%a %b %d %I:%M %p ",
         widget = wibox.widget.textclock
+    }
+
+    -- Create a layoutbox widget
+    s.layoutbox_widget = awful.widget.layoutbox {
+        screen  = s,
+        buttons = {
+            awful.button(
+                { }, leftclick,
+                function () awful.layout.inc( 1) end
+            ),
+            awful.button(
+                { }, rightclick,
+                function () awful.layout.inc(-1) end
+            ),
+        }
     }
 
     -- Create the wibox
