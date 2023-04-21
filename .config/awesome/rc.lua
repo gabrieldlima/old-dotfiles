@@ -123,20 +123,38 @@ screen.connect_signal("request::desktop_decoration", function(s)
         screen  = s,
         filter  = awful.widget.taglist.filter.all,
         buttons = {
-            awful.button({ }, leftclick, function(t) t:view_only() end),
-            awful.button({ modkey }, leftclick, function(t)
-                if client.focus then
-                    client.focus:move_to_tag(t)
+            awful.button(
+                { }, leftclick,
+                function(t) t:view_only() end
+            ),
+            awful.button(
+                { modkey }, leftclick,
+                function(t)
+                    if client.focus then
+                        client.focus:move_to_tag(t)
+                    end
                 end
-            end),
-            awful.button({ }, rightclick, awful.tag.viewtoggle),
-            awful.button({ modkey }, rightclick, function(t)
-                if client.focus then
-                    client.focus:toggle_tag(t)
+            ),
+            awful.button(
+                { }, rightclick,
+                awful.tag.viewtoggle
+            ),
+            awful.button(
+                { modkey }, rightclick,
+                function(t)
+                    if client.focus then
+                        client.focus:toggle_tag(t)
+                    end
                 end
-            end),
-            awful.button({ }, scrollup, function(t) awful.tag.viewprev(t.screen) end),
-            awful.button({ }, scrolldowm, function(t) awful.tag.viewnext(t.screen) end),
+            ),
+            awful.button(
+                { }, scrollup,
+                function(t) awful.tag.viewprev(t.screen) end
+            ),
+            awful.button(
+                { }, scrolldowm,
+                function(t) awful.tag.viewnext(t.screen) end
+            ),
         }
     }
 
