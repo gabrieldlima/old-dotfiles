@@ -9,7 +9,7 @@ local theme = {}
 
 -- Default variables
 theme.useless_gap                    = dpi(5)
-theme.font                           = "FiraCode Nerd Font 8"
+theme.font                           = "FiraCode Nerd Font Medium 8"
 theme.bg_normal                      = "#11111b"
 theme.bg_focus                       = "#b4befe"
 theme.bg_urgent                      = "#11111b"
@@ -296,11 +296,11 @@ end)
 -- theme.progressbar_paddings = nil
 
 -- prompt
-theme.prompt_fg_cursor = "#11111b"
-theme.prompt_bg_cursor = "#cdd6f4"
-theme.prompt_font      = "FiraCode Nerd Font Medium 8"
-theme.prompt_fg        = "#cdd6f4"
-theme.prompt_bg        = "#11111b"
+-- theme.prompt_fg_cursor = nil
+-- theme.prompt_bg_cursor = nil
+-- theme.prompt_font      = nil
+-- theme.prompt_fg        = nil
+-- theme.prompt_bg        = nil
 
 -- radialprogressbar
 -- theme.radialprogressbar_border_color = nil
