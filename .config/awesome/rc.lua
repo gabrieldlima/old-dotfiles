@@ -103,9 +103,6 @@ screen.connect_signal("request::desktop_decoration", function(s)
     -- awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
     awful.tag({ "󰬺", "󰬻", "󰬼", "󰬽", "󰬾", "󰬿", "󰭀", "󰭁", "󰭂" }, s, awful.layout.layouts[1])
 
-    -- Create a promptbox for each screen
-    s.mypromptbox = awful.widget.prompt()
-
     -- Create an imagebox widget which will contain an icon indicating which layout we're using.
     -- We need one layoutbox per screen.
     s.mylayoutbox = awful.widget.layoutbox {
@@ -181,7 +178,6 @@ screen.connect_signal("request::desktop_decoration", function(s)
             { -- Left widgets
                 layout = wibox.layout.fixed.horizontal,
                 s.mytaglist,
-                s.mypromptbox,
             },
             s.mytasklist, -- Middle widget
             { -- Right widgets

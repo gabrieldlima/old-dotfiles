@@ -79,11 +79,6 @@ awful.keyboard.append_global_keybindings({
         { description = "open a terminal", group = "launcher" }
     ),
     awful.key(
-        { modkey }, "r",
-        function () awful.screen.focused().mypromptbox:run() end,
-        { description = "run prompt", group = "launcher" }
-    ),
-    awful.key(
         { modkey }, "p",
         function() awful.spawn(launcher, false) end,
         { description = "show the dmenu", group = "launcher" }
