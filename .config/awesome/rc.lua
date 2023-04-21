@@ -92,9 +92,6 @@ end)
 -----------
 -- Wibar --
 -----------
--- Keyboard map indicator and switcher
-mykeyboardlayout = awful.widget.keyboardlayout()
-
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
 
@@ -174,7 +171,6 @@ screen.connect_signal("request::desktop_decoration", function(s)
             s.mytasklist, -- Middle widget
             { -- Right widgets
                 layout = wibox.layout.fixed.horizontal,
-                mykeyboardlayout,
                 wibox.widget.systray(),
                 mytextclock,
                 s.mylayoutbox,
