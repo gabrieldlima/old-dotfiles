@@ -1,7 +1,7 @@
 WORDCHARS='*?_-.[]~=\&;!#%^(){}<>|'
 
 # ENVIRONMENT VARIABLES
-source $HOME/.config/zsh/.zprofile
+# source $HOME/.config/shell/profile
 
 # ZSH OPTIONS
 setopt HIST_IGNORE_ALL_DUPS
