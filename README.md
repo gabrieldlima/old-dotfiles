@@ -3,7 +3,7 @@
 ### Programs I use:
 + **OS**: [gentoo](https://www.gentoo.org/)
 + **WM**: [awesomewm](https://github.com/awesomeWM/awesome)
-+ **Shell**: [zsh](https://www.zsh.org/)
++ **Shell**: [fish](https://github.com/fish-shell/fish-shell)
 + **Terminal**: [wezterm](https://github.com/wez/wezterm)
 + **Editor**: [neovim](https://github.com/neovim/neovim)
 + **Launcher**: [dmenu](https://tools.suckless.org/dmenu/)
