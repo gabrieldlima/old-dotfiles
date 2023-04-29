@@ -1,8 +1,5 @@
 WORDCHARS='*?_-.[]~=\&;!#%^(){}<>|'
 
-# ENVIRONMENT VARIABLES
-# source $HOME/.config/shell/profile
-
 # ZSH OPTIONS
 setopt HIST_IGNORE_ALL_DUPS
 setopt INC_APPEND_HISTORY
