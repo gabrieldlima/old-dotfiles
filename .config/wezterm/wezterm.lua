@@ -6,6 +6,7 @@ custom.background = "#11111b"
 
 return {
     -- Configuration
+    default_prog = { "/bin/fish" },
     check_for_updates = false,
     enable_tab_bar = true,
     hide_tab_bar_if_only_one_tab = true,
