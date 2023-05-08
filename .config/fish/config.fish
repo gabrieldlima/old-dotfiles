@@ -28,6 +28,7 @@ if status is-interactive
     alias v='nvim'
     alias vi='nvim'
     alias vim='nvim'
+    alias code='nvim'
     alias nano='nvim'
     alias emacs='nvim'
 
