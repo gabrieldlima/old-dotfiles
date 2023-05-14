@@ -9,7 +9,7 @@ local theme = {}
 
 -- Default variables
 theme.useless_gap                    = dpi(5)
-theme.font                           = "FiraCode Nerd Font Medium 8"
+theme.font                           = "FiraCode Nerd Font Bold 8"
 theme.bg_normal                      = "#11111b"
 theme.bg_focus                       = "#b4befe"
 theme.bg_urgent                      = "#11111b"
@@ -128,7 +128,7 @@ theme.hotkeys_modifiers_fg     = "#cdd6f4"
 theme.hotkeys_label_bg         = "#b4befe"
 theme.hotkeys_label_fg         = "#11111b"
 theme.hotkeys_font             = "FiraCode Nerd Font Bold 8"
-theme.hotkeys_description_font = "FiraCode Nerd Font Medium Italic 8"
+theme.hotkeys_description_font = "FiraCode Nerd Font Bold Italic 8"
 theme.hotkeys_group_margin     = 10
 
 -- icon
@@ -181,7 +181,7 @@ theme.layout_cornerse   = themes_path .. "cornersew.png"
 
 -- menu
 -- theme.menu_submenu_icon = nil
-theme.menu_font         = "FiraCode Nerd Font Medium 8"
+theme.menu_font         = "FiraCode Nerd Font Bold 8"
 theme.menu_height       = dpi(20)
 theme.menu_width        = dpi(120)
 theme.menu_border_color = "#b4befe"
