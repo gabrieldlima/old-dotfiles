@@ -1,7 +1,7 @@
 ## My personal dotfiles
 
 ### Programs I use:
-+ **OS**: [gentoo](https://www.gentoo.org/)
++ **OS**: [arch](https://archlinux.org)
 + **WM**: [awesomewm](https://github.com/awesomeWM/awesome)
 + **Shell**: [fish](https://github.com/fish-shell/fish-shell)
 + **Terminal**: [wezterm](https://github.com/wez/wezterm)
