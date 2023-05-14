@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-date=$(date "+%a %b %d")
-echo " $date"

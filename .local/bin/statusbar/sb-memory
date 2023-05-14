@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-memory="$(free -h | awk '/Mem:/ {print $3}')"
-echo " $memory"
