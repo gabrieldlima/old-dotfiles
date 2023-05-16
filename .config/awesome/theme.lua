@@ -337,9 +337,9 @@ end)
 -- theme.slider_bar_active_color = nil
 
 -- snap
--- theme.snap_bg = nil
--- theme.snap_border_width = nil
--- theme.snap_shape = nil
+theme.snap_bg           = "#b4befe"
+theme.snap_border_width = dpi(3)
+-- theme.snap_shape        = nil
 
 -- snapper
 -- theme.snapper_gap = nil
