@@ -3,7 +3,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 
 -- Applications
 terminal = "wezterm"
-browser  = "brave-bin"
+browser  = "qutebrowser"
 launcher = "dmenu_run"
 editor   = os.getenv("EDITOR") or "nvim"
 
@@ -83,6 +83,11 @@ awful.keyboard.append_global_keybindings({
         function() awful.spawn(launcher, false) end,
         { description = "show the dmenu", group = "launcher" }
     ),
+    awful.key(
+        { modkey }, "b",
+        function () awful.spawn(browser) end,
+        { description = "open a web browser", group = "launcher"}
+    )
 })
 
 -- Tags related keybindings
