@@ -4,7 +4,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- Applications
 terminal = "wezterm"
 browser  = "qutebrowser"
-launcher = "dmenu_run"
+launcher = "rofi -show drun"
 editor   = os.getenv("EDITOR") or "nvim"
 
 -- Modkeys
