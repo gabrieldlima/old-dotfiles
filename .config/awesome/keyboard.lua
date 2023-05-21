@@ -31,14 +31,6 @@ awful.mouse.append_global_mousebindings({
         function () mymainmenu:toggle() end
     ),
     awful.button(
-        { }, scrollup,
-        awful.tag.viewprev
-    ),
-    awful.button(
-        { }, scrolldowm,
-        awful.tag.viewnext
-    ),
-    awful.button(
         { modkey }, sideupclick,
         awful.tag.viewnext
     ),
