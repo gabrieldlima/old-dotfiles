@@ -1,0 +1,131 @@
+* {
+    rosewater:          #f5e0dc;
+    flamingo:           #f2cdcd;
+    pink:               #f5c2e7;
+    mauve:              #cba6f7;
+    red:                #f38ba8;
+    maroon:             #eba0ac;
+    peach:              #fab387;
+    yellow:             #f9e2af;
+    green:              #a6e3a1;
+    teal:               #94e2d5;
+    sky:                #89dceb;
+    sapphire:           #74c7ec;
+    blue:               #89b4fa;
+    lavender:           #b4befe;
+    text:               #cdd6f4;
+    subtext1:           #bac2de;
+    subtext0:           #a6adc8;
+    overlay2:           #9399b2;
+    overlay1:           #7f849c;
+    overlay0:           #6c7086;
+    surface2:           #585b70;
+    surface1:           #45475a;
+    surface0:           #313244;
+    base:               #1e1e2e;
+    mantle:             #181825;
+    crust:              #11111b;
+
+    width:              700;
+    font:               "FiraCode Nerd Font Bold 10";
+}
+
+element-text, element-icon , mode-switcher {
+    background-color:   inherit;
+    text-color:         inherit;
+}
+
+window {
+    height:             400px;
+    border:             3px;
+    border-color:       @lavender;
+    background-color:   @crust;
+}
+
+mainbox {
+    background-color:   @crust;
+}
+
+inputbar {
+    children:           [prompt,entry];
+    background-color:   @crust;
+    border-radius:      0px;
+    padding:            2px;
+}
+
+prompt {
+    background-color:   @lavender;
+    padding:            6px;
+    text-color:         @crust;
+    border-radius:      0px;
+    margin:             20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+    expand:             false;
+    str:                ":";
+}
+
+entry {
+    padding:            6px;
+    margin:             20px 0px 0px 10px;
+    text-color:         @text;
+    background-color:   @crust;
+    placeholder:        "Search";
+    placeholder-color:  @surface1;
+}
+
+listview {
+    border:             0px 0px 0px;
+    padding:            6px 0px 0px;
+    margin:             10px 20px 0px 20px;
+    columns:            2;
+    lines:              5;
+    background-color:   @crust;
+}
+
+element {
+    padding:            5px;
+    background-color:   @crust;
+    text-color:         @text;
+}
+
+element-icon {
+    size:               20px;
+}
+
+element selected {
+    background-color:   @base;
+    text-color:         @red;
+}
+
+mode-switcher {
+    spacing:            0;
+}
+
+button {
+    padding:            10px;
+    background-color:   @base;
+    text-color:         @overlay0;
+    vertical-align:     0.5;
+    horizontal-align:   0.5;
+}
+
+button selected {
+    background-color:     @crust;
+    text-color:           @lavender;
+}
+
+message {
+    background-color:   @base;
+    margin:             2px;
+    padding:            2px;
+    border-radius:      0px;
+}
+
+textbox {
+    padding:            6px;
+    margin:             20px 0px 0px 20px;
+    text-color:         @lavender;
+    background-color:   @base;
+}
