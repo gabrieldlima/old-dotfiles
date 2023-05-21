@@ -5,27 +5,56 @@ local dpi           = xresources.apply_dpi
 
 local themes_path = "/home/gabriel/.config/awesome/icons/layouts/"
 
+local catppuccin_mocha = {
+    rosewater = "#f5e0dc",
+    flamingo  = "#f2cdcd",
+    pink      = "#f5c2e7",
+    mauve     = "#cba6f7",
+    red       = "#f38ba8",
+    maroon    = "#eba0ac",
+    peach     = "#fab387",
+    yellow    = "#f9e2af",
+    green     = "#a6e3a1",
+    teal      = "#94e2d5",
+    sky       = "#89dceb",
+    sapphire  = "#74c7ec",
+    blue      = "#89b4fa",
+    lavender  = "#b4befe",
+    text      = "#cdd6f4",
+    subtext1  = "#bac2de",
+    subtext0  = "#a6adc8",
+    overlay2  = "#9399b2",
+    overlay1  = "#7f849c",
+    overlay0  = "#6c7086",
+    surface2  = "#585b70",
+    surface1  = "#45475a",
+    surface0  = "#313244",
+    base      = "#1e1e2e",
+    mantle    = "#181825",
+    crust     = "#11111b"
+}
+
 local theme = {}
 
 -- Default variables
 theme.useless_gap                    = dpi(5)
 theme.font                           = "FiraCode Nerd Font Bold 8"
-theme.bg_normal                      = "#11111b"
-theme.bg_focus                       = "#b4befe"
-theme.bg_urgent                      = "#11111b"
-theme.bg_minimize                    = "#11111b"
-theme.fg_normal                      = "#cdd6f4"
-theme.fg_focus                       = "#11111b"
-theme.fg_urgent                      = "#cdd6f4"
-theme.fg_minimize                    = "#cdd6f4"
+theme.bg_normal                      = catppuccin_mocha.crust
+theme.bg_focus                       = catppuccin_mocha.lavender
+theme.bg_urgent                      = catppuccin_mocha.crust
+theme.bg_minimize                    = catppuccin_mocha.crust
+theme.fg_normal                      = catppuccin_mocha.text
+theme.fg_focus                       = catppuccin_mocha.crust
+theme.fg_urgent                      = catppuccin_mocha.text
+theme.fg_minimize                    = catppuccin_mocha.text
 -- theme.wallpaper = nil
-theme.bg_systray                     = "#11111b"
-theme.border_color_marked            = "#11111b"
+theme.bg_systray                     = catppuccin_mocha.crust
+theme.border_color_marked            = catppuccin_mocha.crust
 -- theme.border_color_floating          = nil
 -- theme.border_color_maximized         = nil
 -- theme.border_color_fullscreen        = nil
-theme.border_color_active            = "#b4befe"
-theme.border_color_normal            = "#11111b"
+theme.border_color_active            = catppuccin_mocha.lavender
+theme.border_color_normal            = catppuccin_mocha.crust
 -- theme.border_color_urgent            = nil
 -- theme.border_color_new               = nil
 -- theme.border_color_floating_active   = nil
@@ -119,14 +148,14 @@ theme.gap_single_client = true
 -- theme.graph_border_color = nil
 
 -- hotkeys
-theme.hotkeys_bg               = "#11111b"
-theme.hotkeys_fg               = "#a6adc8"
+theme.hotkeys_bg               = catppuccin_mocha.crust
+theme.hotkeys_fg               = catppuccin_mocha.subtext0
 theme.hotkeys_border_width     = dpi(3)
-theme.hotkeys_border_color     = "#b4befe"
+theme.hotkeys_border_color     = catppuccin_mocha.lavender
 -- theme.hotkeys_shape            = nil
-theme.hotkeys_modifiers_fg     = "#cdd6f4"
-theme.hotkeys_label_bg         = "#b4befe"
-theme.hotkeys_label_fg         = "#11111b"
+theme.hotkeys_modifiers_fg     = catppuccin_mocha.text
+theme.hotkeys_label_bg         = catppuccin_mocha.lavender
+theme.hotkeys_label_fg         = catppuccin_mocha.crust
 theme.hotkeys_font             = "FiraCode Nerd Font Bold 8"
 theme.hotkeys_description_font = "FiraCode Nerd Font Bold Italic 8"
 theme.hotkeys_group_margin     = 10
@@ -184,12 +213,12 @@ theme.layout_cornerse   = themes_path .. "cornersew.png"
 theme.menu_font         = "FiraCode Nerd Font Bold 8"
 theme.menu_height       = dpi(20)
 theme.menu_width        = dpi(120)
-theme.menu_border_color = "#b4befe"
+theme.menu_border_color = catppuccin_mocha.lavender
 theme.menu_border_width = dpi(1)
-theme.menu_fg_focus     = "#11111b"
-theme.menu_bg_focus     = "#b4befe"
-theme.menu_fg_normal    = "#cdd6f4"
-theme.menu_bg_normal    = "#11111b"
+theme.menu_fg_focus     = catppuccin_mocha.crust
+theme.menu_bg_focus     = catppuccin_mocha.lavender
+theme.menu_fg_normal    = catppuccin_mocha.text
+theme.menu_bg_normal    = catppuccin_mocha.crust
 -- theme.menu_submenu      = nil
 
 -- menubar
@@ -337,7 +366,7 @@ end)
 -- theme.slider_bar_active_color = nil
 
 -- snap
-theme.snap_bg           = "#b4befe"
+theme.snap_bg           = catppuccin_mocha.lavender
 theme.snap_border_width = dpi(3)
 -- theme.snap_shape        = nil
 
@@ -349,14 +378,14 @@ theme.snap_border_width = dpi(3)
 -- theme.systray_icon_spacing = nil
 
 -- taglist
-theme.taglist_fg_focus                    = "#11111b"
-theme.taglist_bg_focus                    = "#b4befe"
+theme.taglist_fg_focus                    = catppuccin_mocha.crust
+theme.taglist_bg_focus                    = catppuccin_mocha.lavender
 -- theme.taglist_fg_urgent                   = nil
 -- theme.taglist_bg_urgent                   = nil
-theme.taglist_bg_occupied                 = "#11111b"
-theme.taglist_fg_occupied                 = "#cdd6f4"
-theme.taglist_bg_empty                    = "#11111b"
-theme.taglist_fg_empty                    = "#7f849c"
+theme.taglist_bg_occupied                 = catppuccin_mocha.crust
+theme.taglist_fg_occupied                 = catppuccin_mocha.text
+theme.taglist_bg_empty                    = catppuccin_mocha.crust
+theme.taglist_fg_empty                    = catppuccin_mocha.overlay
 -- theme.taglist_bg_volatile                 = nil
 -- theme.taglist_fg_volatile                 = nil
 -- theme.taglist_squares_sel                 = nil
@@ -365,7 +394,7 @@ theme.taglist_fg_empty                    = "#7f849c"
 -- theme.taglist_squares_unsel_empty         = nil
 -- theme.taglist_squares_resize              = nil
 -- theme.taglist_disable_icon                = nil
-theme.taglist_font                        = "FiraCode Nerd Font Bold 15"
+theme.taglist_font                        = "FiraCode Nerd Font Bold 8"
 theme.taglist_spacing                     = 5
 -- theme.taglist_shape                       = nil
 -- theme.taglist_shape_border_width          = nil
@@ -387,8 +416,8 @@ theme.taglist_spacing                     = 5
 -- tasklist
 -- theme.tasklist_fg_normal                    = nil
 -- theme.tasklist_bg_normal                    = nil
-theme.tasklist_fg_focus                     = "#cdd6f4"
-theme.tasklist_bg_focus                     = "#11111b"
+theme.tasklist_fg_focus                     = catppuccin_mocha.text
+theme.tasklist_bg_focus                     = catppuccin_mocha.crust
 -- theme.tasklist_fg_urgent                    = nil
 -- theme.tasklist_bg_urgent                    = nil
 -- theme.tasklist_fg_minimize                  = nil
