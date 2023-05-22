@@ -96,7 +96,7 @@ element-icon {
 
 element selected {
     background-color:   @base;
-    text-color:         @red;
+    text-color:         @lavender;
 }
 
 mode-switcher {
