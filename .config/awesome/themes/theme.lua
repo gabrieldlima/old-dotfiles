@@ -1,9 +1,10 @@
-local theme_assets  = require("beautiful.theme_assets")
 local rnotification = require("ruled.notification")
 local xresources    = require("beautiful.xresources")
 local dpi           = xresources.apply_dpi
 
-local themes_path = "/home/gabriel/.config/awesome/icons/layouts/"
+local themes_path = "/home/gabriel/.config/awesome/themes/icons/layouts/"
+
+local font = "FiraCode Nerd Font Bold 8"
 
 local catppuccin_mocha = {
     rosewater = "#f5e0dc",
@@ -38,7 +39,7 @@ local theme = {}
 
 -- Default variables
 theme.useless_gap                    = dpi(5)
-theme.font                           = "FiraCode Nerd Font Bold 8"
+theme.font                           = font
 theme.bg_normal                      = catppuccin_mocha.crust
 theme.bg_focus                       = catppuccin_mocha.lavender
 theme.bg_urgent                      = catppuccin_mocha.crust
@@ -156,7 +157,7 @@ theme.hotkeys_border_color     = catppuccin_mocha.lavender
 theme.hotkeys_modifiers_fg     = catppuccin_mocha.text
 theme.hotkeys_label_bg         = catppuccin_mocha.lavender
 theme.hotkeys_label_fg         = catppuccin_mocha.crust
-theme.hotkeys_font             = "FiraCode Nerd Font Bold 8"
+theme.hotkeys_font             = font
 theme.hotkeys_description_font = "FiraCode Nerd Font Bold Italic 8"
 theme.hotkeys_group_margin     = 10
 
@@ -210,7 +211,7 @@ theme.layout_cornerse   = themes_path .. "cornersew.png"
 
 -- menu
 -- theme.menu_submenu_icon = nil
-theme.menu_font         = "FiraCode Nerd Font Bold 8"
+theme.menu_font         = font
 theme.menu_height       = dpi(20)
 theme.menu_width        = dpi(120)
 theme.menu_border_color = catppuccin_mocha.lavender
@@ -394,7 +395,7 @@ theme.taglist_fg_empty                    = catppuccin_mocha.overlay1
 -- theme.taglist_squares_unsel_empty         = nil
 -- theme.taglist_squares_resize              = nil
 -- theme.taglist_disable_icon                = nil
-theme.taglist_font                        = "FiraCode Nerd Font Bold 8"
+theme.taglist_font                        = font
 theme.taglist_spacing                     = 5
 -- theme.taglist_shape                       = nil
 -- theme.taglist_shape_border_width          = nil
@@ -439,7 +440,7 @@ theme.tasklist_plain_task_name              = false
 -- theme.tasklist_maximized_vertical           = nil
 -- theme.tasklist_minimized                    = nil
 -- theme.tasklist_align                        = nil
-theme.tasklist_font                         = "FiraCode Nerd Font Bold 8"
+theme.tasklist_font                         = font
 -- theme.tasklist_font_focus                   = nil
 -- theme.tasklist_font_minimized               = nil
 -- theme.tasklist_font_urgent                  = nil
