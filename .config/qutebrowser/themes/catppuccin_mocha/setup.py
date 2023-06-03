@@ -30,16 +30,16 @@ def setup(c, samecolorrows = False):
 
     # completion {{{
     ## Background color of the completion widget category headers.
-    c.colors.completion.category.bg = palette["base"]
+    c.colors.completion.category.bg = palette["crust"]
     ## Bottom border color of the completion widget category headers.
-    c.colors.completion.category.border.bottom = palette["mantle"]
+    c.colors.completion.category.border.bottom = palette["lavender"]
     ## Top border color of the completion widget category headers.
-    c.colors.completion.category.border.top = palette["overlay2"]
+    c.colors.completion.category.border.top = palette["lavender"]
     ## Foreground color of completion widget category headers.
     c.colors.completion.category.fg = palette["green"]
     ## Background color of the completion widget for even and odd rows.
     if samecolorrows:
-        c.colors.completion.even.bg = palette["mantle"]
+        c.colors.completion.even.bg = palette["crust"]
         c.colors.completion.odd.bg = c.colors.completion.even.bg
     else:
         c.colors.completion.even.bg = palette["mantle"]
@@ -48,11 +48,11 @@ def setup(c, samecolorrows = False):
     c.colors.completion.fg = palette["subtext0"]
 
     ## Background color of the selected completion item.
-    c.colors.completion.item.selected.bg = palette["surface2"]
+    c.colors.completion.item.selected.bg = palette["base"]
     ## Bottom border color of the selected completion item.
-    c.colors.completion.item.selected.border.bottom = palette["surface2"]
+    c.colors.completion.item.selected.border.bottom = palette["base"]
     ## Top border color of the completion widget category headers.
-    c.colors.completion.item.selected.border.top = palette["surface2"]
+    c.colors.completion.item.selected.border.top = palette["base"]
     ## Foreground color of the selected completion item.
     c.colors.completion.item.selected.fg = palette["text"]
     ## Foreground color of the selected completion item.
@@ -147,15 +147,15 @@ def setup(c, samecolorrows = False):
 
     # statusbar {{{
     ## Background color of the statusbar.
-    c.colors.statusbar.normal.bg = palette["base"]
+    c.colors.statusbar.normal.bg = palette["crust"]
     ## Background color of the statusbar in insert mode.
     c.colors.statusbar.insert.bg = palette["crust"]
     ## Background color of the statusbar in command mode.
-    c.colors.statusbar.command.bg = palette["base"]
+    c.colors.statusbar.command.bg = palette["crust"]
     ## Background color of the statusbar in caret mode.
-    c.colors.statusbar.caret.bg = palette["base"]
+    c.colors.statusbar.caret.bg = palette["crust"]
     ## Background color of the statusbar in caret mode with a selection.
-    c.colors.statusbar.caret.selection.bg = palette["base"]
+    c.colors.statusbar.caret.selection.bg = palette["crust"]
 
     ## Background color of the progress bar.
     c.colors.statusbar.progress.bg = palette["base"]
@@ -251,6 +251,5 @@ def setup(c, samecolorrows = False):
     # }}}
 
     # background color for webpages {{{
-    c.colors.webpage.bg = palette["base"]
     c.colors.webpage.preferred_color_scheme = "dark"
     # }}}
