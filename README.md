@@ -12,4 +12,4 @@
 + **File Manager**: [nnn](https://github.com/jarun/nnn)
 + **PDF Viewer**: [zathura](https://github.com/pwmt/zathura)
 + **Notification**: [dunst](https://github.com/dunst-project/dunst)
-+ **Fonts**: [fira code](https://github.com/tonsky/FiraCode)
++ **Font**: [fira code](https://github.com/tonsky/FiraCode)
