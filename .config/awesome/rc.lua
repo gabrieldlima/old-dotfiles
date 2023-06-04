@@ -11,11 +11,10 @@
 -- Awesome modules --
 ---------------------
 --require("keyboard")
-require("error")
+require("signals")
 require("themes")
 require("bindings")
 require("rules")
-require("notifications")
 
 local apps = require("config.apps")
 local mod  = require("bindings.mod")
