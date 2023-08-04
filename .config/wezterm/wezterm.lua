@@ -2,11 +2,11 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 
 local custom = wezterm.color.get_builtin_schemes()["Catppuccin Mocha"]
-custom.background = "#11111b"
+custom.background = "#0a0c10"
 
 return {
     -- Configuration
-    default_prog = { "/bin/fish" },
+    default_prog = { "fish" },
     check_for_updates = false,
     enable_tab_bar = true,
     hide_tab_bar_if_only_one_tab = true,
@@ -45,7 +45,7 @@ return {
     },
 
     -- Fonts
-    font = wezterm.font "Fira Code",
+    font = wezterm.font "FiraCode Nerd Font",
     font_size = 10.0,
 
     -- Colors & Appearance
