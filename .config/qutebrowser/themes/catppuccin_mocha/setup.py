@@ -23,18 +23,20 @@ def setup(c, samecolorrows = False):
         "surface2":  "#585b70",
         "surface1":  "#45475a",
         "surface0":  "#313244",
-        "base":      "#1e1e2e",
+        "base":      "#11111b",
+        # "base":      "#1e1e2e",
         "mantle":    "#181825",
-        "crust":     "#11111b"
+        # "crust":     "#11111b"
+        "crust":     "#0a0c10"
     }
 
     # completion {{{
     ## Background color of the completion widget category headers.
     c.colors.completion.category.bg = palette["crust"]
     ## Bottom border color of the completion widget category headers.
-    c.colors.completion.category.border.bottom = palette["lavender"]
+    c.colors.completion.category.border.bottom = palette["surface2"]
     ## Top border color of the completion widget category headers.
-    c.colors.completion.category.border.top = palette["lavender"]
+    c.colors.completion.category.border.top = palette["surface2"]
     ## Foreground color of completion widget category headers.
     c.colors.completion.category.fg = palette["green"]
     ## Background color of the completion widget for even and odd rows.
