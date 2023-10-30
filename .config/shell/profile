@@ -5,7 +5,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 
 # Shell
-export BROWSER='brave'
+export BROWSER='qutebrowser'
 export EDITOR='nvim'
 export TERMINAL='wezterm'
 export TERM='xterm-256color'
@@ -16,8 +16,6 @@ export PATH="$HOME/.local/bin/:$PATH"
 
 
 # ~/ Clean-up:
-export XINITRC="$XDG_CONFIG_HOME"/x11/xinitrc
-export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export GOPATH="$XDG_DATA_HOME"/go
@@ -25,7 +23,10 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 export LESSHISTFILE="-"
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
+export STACK_ROOT="$XDG_DATA_HOME"/stack
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export XINITRC="$XDG_CONFIG_HOME"/x11/xinitrc
 export ZDOTDIR=$HOME/.config/zsh
 
 
