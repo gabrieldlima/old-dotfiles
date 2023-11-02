@@ -1,8 +1,8 @@
 ## My personal dotfiles
 
 ### Programs I use:
-+ **OS**: [nixos](https://nixos.org/)
-+ **WM**: [hyprland](https://hyprland.org/)
++ **OS**: [arch linux](https://archlinux.org/)
++ **WM**: [xmonad](https://xmonad.org/)
 + **Shell**: [fish](https://github.com/fish-shell/fish-shell)
 + **Terminal**: [wezterm](https://github.com/wez/wezterm)
 + **Editor**: [neovim](https://github.com/neovim/neovim)
