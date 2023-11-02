@@ -15,9 +15,10 @@ import XMonad.Util.SpawnOnce      -- For spawning applications just once during 
 import XMonad.Layout.ThreeColumns -- Layout for arranging windows in three columns
 import XMonad.Hooks.EwmhDesktops  -- Enhances XMonad's handling of EWMH hints and full-screen support
 import XMonad.Hooks.ManageHelpers -- Used for defining rules to manage how windows are handled
+import XMonad.Hooks.ManageDocks   -- Provides tools to automatically manage dock type programs
 
 main :: IO ()
-main = xmonad $ ewmhFullscreen $ ewmh $ myConfig
+main = xmonad $ ewmhFullscreen $ ewmh $ docks $ myConfig
 
 myConfig = def
     {
@@ -33,7 +34,7 @@ myConfig = def
     , ("M-<Return>", spawn "wezterm")  -- Terminal
     ]
 
-myLayout = tiled ||| Mirror tiled ||| threeCol ||| Full
+myLayout = avoidStruts $ tiled ||| Mirror tiled ||| threeCol ||| Full
   where
     threeCol = ThreeColMid nmaster delta ratio
     tiled = Tall nmaster delta ratio
