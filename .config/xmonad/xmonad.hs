@@ -13,9 +13,12 @@ import XMonad.Util.EZConfig
 import XMonad.Util.Ungrab
 import XMonad.Layout.ThreeColumns
 import XMonad.Layout.Magnifier
+import XMonad.Hooks.EwmhDesktops
 
 main :: IO ()
-main = xmonad $ def
+main = xmonad $ ewmhFullscreen $ ewmh $ myConfig
+
+myConfig = def
     {
       modMask = mod4Mask    -- Rebind Mod to the Super key
     , layoutHook = myLayout -- Use custom layouts
