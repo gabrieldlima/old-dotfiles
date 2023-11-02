@@ -14,6 +14,7 @@ import XMonad.Util.Ungrab         -- Handles releasing keyboard and pointer grab
 import XMonad.Util.SpawnOnce      -- For spawning applications just once during XMonad startup
 import XMonad.Layout.ThreeColumns -- Layout for arranging windows in three columns
 import XMonad.Layout.Fullscreen   -- Hooks for sending messages about fullscreen windows to layouts
+import XMonad.Layout.Spacing      -- Add a configurable amount of space around windows
 import XMonad.Hooks.EwmhDesktops  -- Enhances XMonad's handling of EWMH hints and full-screen support
 import XMonad.Hooks.ManageHelpers -- Used for defining rules to manage how windows are handled
 import XMonad.Hooks.ManageDocks   -- Provides tools to automatically manage dock type programs
@@ -35,7 +36,7 @@ myConfig = def
     , ("M-<Return>", spawn "wezterm")  -- Terminal
     ]
 
-myLayout = avoidStruts $ tiled ||| Mirror tiled ||| threeCol ||| Full
+myLayout = avoidStruts $ spacingRaw False (Border 5 5 5 5) True (Border 5 5 5 5) True $ tiled ||| Mirror tiled ||| threeCol ||| Full
   where
     threeCol = ThreeColMid nmaster delta ratio
     tiled = Tall nmaster delta ratio
