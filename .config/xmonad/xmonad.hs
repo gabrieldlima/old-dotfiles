@@ -1,4 +1,4 @@
-import Xmonad
+import XMonad
 
 main :: IO ()
 main = xmonad def
