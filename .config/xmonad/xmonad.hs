@@ -13,6 +13,7 @@ import XMonad.Util.EZConfig       -- Utility for easily configuring keybindings
 import XMonad.Util.Ungrab         -- Handles releasing keyboard and pointer grabs
 import XMonad.Util.SpawnOnce      -- For spawning applications just once during XMonad startup
 import XMonad.Layout.ThreeColumns -- Layout for arranging windows in three columns
+import XMonad.Layout.Fullscreen   -- Hooks for sending messages about fullscreen windows to layouts
 import XMonad.Hooks.EwmhDesktops  -- Enhances XMonad's handling of EWMH hints and full-screen support
 import XMonad.Hooks.ManageHelpers -- Used for defining rules to manage how windows are handled
 import XMonad.Hooks.ManageDocks   -- Provides tools to automatically manage dock type programs
@@ -49,7 +50,7 @@ myStartupHook = do
   spawnOnce "xsetroot -cursor_name left_ptr" -- Set the mouse cursor
 
 myManageHook :: ManageHook
-myManageHook = composeAll
+myManageHook = fullscreenManageHook <+> manageDocks <+> composeAll
     [
       isDialog --> doFloat -- Float all dialog windows
     ]
