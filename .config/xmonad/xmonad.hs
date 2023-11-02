@@ -14,6 +14,7 @@ import XMonad.Util.Ungrab         -- Handles releasing keyboard and pointer grab
 import XMonad.Util.SpawnOnce      -- For spawning applications just once during XMonad startup
 import XMonad.Layout.ThreeColumns -- Layout for arranging windows in three columns
 import XMonad.Hooks.EwmhDesktops  -- Enhances XMonad's handling of EWMH hints and full-screen support
+import XMonad.Hooks.ManageHelpers -- Used for defining rules to manage how windows are handled
 
 main :: IO ()
 main = xmonad $ ewmhFullscreen $ ewmh $ myConfig
@@ -23,6 +24,7 @@ myConfig = def
       modMask = mod4Mask          -- Rebind Mod to the Super key
     , layoutHook = myLayout       -- Use custom layouts
     , startupHook = myStartupHook -- Autostart applications
+    , manageHook = myManageHook   -- Match on certain windows
     }
   `additionalKeysP`
     [
@@ -44,3 +46,9 @@ myStartupHook = do
   spawnOnce "picom"                          -- Compositor
   spawnOnce "nitrogen --restore"             -- Wallpaper
   spawnOnce "xsetroot -cursor_name left_ptr" -- Set the mouse cursor
+
+myManageHook :: ManageHook
+myManageHook = composeAll
+    [
+      isDialog --> doFloat -- Float all dialog windows
+    ]
