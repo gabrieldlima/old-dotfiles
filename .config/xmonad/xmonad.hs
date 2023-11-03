@@ -50,8 +50,10 @@ myLayout = avoidStruts $ spacingRaw False (Border 5 5 5 5) True (Border 5 5 5 5)
 myStartupHook :: X ()
 myStartupHook = do
   spawnOnce "picom"                          -- Compositor
+  spawnOnce "eww open bar"                   -- EWW
   spawnOnce "nitrogen --restore"             -- Wallpaper
   spawnOnce "xsetroot -cursor_name left_ptr" -- Set the mouse cursor
+  spawnOnce "openrgb --noautoconnect -m Off" -- Turn off RGB leds
 
 myManageHook :: ManageHook
 myManageHook = fullscreenManageHook <+> manageDocks <+> composeAll
