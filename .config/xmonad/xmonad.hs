@@ -28,6 +28,9 @@ myConfig = def
     , layoutHook = myLayout       -- Use custom layouts
     , startupHook = myStartupHook -- Autostart applications
     , manageHook = myManageHook   -- Match on certain windows
+    , borderWidth = myBorderWidth -- Width of the window border in pixels
+    , normalBorderColor  = myNormalBorderColor
+    , focusedBorderColor = myFocusedBorderColor
     }
   `additionalKeysP`
     [
@@ -55,3 +58,7 @@ myManageHook = fullscreenManageHook <+> manageDocks <+> composeAll
     [
       isDialog --> doFloat -- Float all dialog windows
     ]
+
+myBorderWidth = 2
+myNormalBorderColor = "#050508"
+myFocusedBorderColor = "#b4befe"
