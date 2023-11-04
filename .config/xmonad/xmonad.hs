@@ -50,6 +50,7 @@ myLayout = avoidStruts $ spacingRaw False (Border 5 5 5 5) True (Border 5 5 5 5)
 myStartupHook :: X ()
 myStartupHook = do
   spawnOnce "picom"                          -- Compositor
+  spawnOnce "xset s off"                     -- Disable screen saver
   spawnOnce "eww open bar"                   -- EWW
   spawnOnce "nitrogen --restore"             -- Wallpaper
   spawnOnce "xsetroot -cursor_name left_ptr" -- Set the mouse cursor
