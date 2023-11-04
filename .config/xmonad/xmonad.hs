@@ -61,6 +61,6 @@ myManageHook = fullscreenManageHook <+> manageDocks <+> composeAll
       isDialog --> doFloat -- Float all dialog windows
     ]
 
-myBorderWidth = 2
+myBorderWidth = 1
 myNormalBorderColor = "#050508"
 myFocusedBorderColor = "#b4befe"
