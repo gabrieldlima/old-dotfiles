@@ -1,14 +1,19 @@
 ## My personal dotfiles
 
-### Programs I use:
-+ **OS**: [arch linux](https://archlinux.org/)
-+ **WM**: [xmonad](https://xmonad.org/)
-+ **Shell**: [fish](https://github.com/fish-shell/fish-shell)
-+ **Terminal**: [wezterm](https://github.com/wez/wezterm)
-+ **Editor**: [neovim](https://github.com/neovim/neovim)
-+ **Launcher**: [rofi](https://github.com/davatorium/rofi)
-+ **Browser**: [qutebrowser](https://github.com/qutebrowser/qutebrowser)
-+ **File Manager**: [nnn](https://github.com/jarun/nnn)
-+ **PDF Viewer**: [zathura](https://github.com/pwmt/zathura)
-+ **Notification**: [dunst](https://github.com/dunst-project/dunst)
-+ **Font**: [fira code](https://github.com/tonsky/FiraCode)
+![img](.config/bspwm/screenshots/0.png)
+---
+![img](.config/bspwm/screenshots/1.png)
+---
+![img](.config/bspwm/screenshots/2.png)
+---
+![img](.config/bspwm/screenshots/3.png)
+---
+![img](.config/bspwm/screenshots/4.png)
+---
+![img](.config/bspwm/screenshots/5.png)
+---
+![img](.config/bspwm/screenshots/6.png)
+---
+![img](.config/bspwm/screenshots/7.png)
+---
+![img](.config/bspwm/screenshots/8.png)
