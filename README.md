@@ -1,4 +1,4 @@
-## My personal dotfiles
+# ⚠️ This Repository is No Longer Maintained
 ### Programs I use:
 + **OS**: [arch linux](https://archlinux.org/)
 + **WM**: [bspwm](https://github.com/baskerville/bspwm)
@@ -13,7 +13,7 @@
 + **PDF Viewer**: [zathura](https://github.com/pwmt/zathura)
 + **Notification**: [dunst](https://github.com/dunst-project/dunst)
 + **Font**: [jetBrains mono nerd font](https://www.jetbrains.com/lp/mono/)
-
+***
 ![img](.config/bspwm/screenshots/0.png)
 ---
 ![img](.config/bspwm/screenshots/1.png)
