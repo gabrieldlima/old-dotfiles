@@ -1,0 +1,4 @@
+(defwidget title []
+  (box :class "title"
+    (label :text "${window}"
+           :limit-width 50)))

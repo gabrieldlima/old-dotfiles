@@ -1,0 +1,42 @@
+* {
+  all: unset;
+}
+
+.bar {
+  font-family: "Vanilla Caramel";
+  color: #cdd6f4;
+  background-color: #050508;
+  border-radius: 10px;
+}
+
+.eww {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.logo {
+  padding-right: 5px;
+}
+
+.workspaces {
+  font-family: "Noto Sans JP ExtraBold";
+  font-size: 15;
+  padding: 5px;
+
+  &.current * {
+    color: #89b4fa;
+  }
+
+  &.occupied {
+    color: #b4befe;
+  }
+
+  &.empty {
+    color: #313244;
+  }
+}
+
+.title {
+  font-size: 15;
+  color: #cdd6f4;
+}

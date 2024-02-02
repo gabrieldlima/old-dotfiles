@@ -1,0 +1,9 @@
+;; Polling variables
+(defpoll time :interval "1s" "date '+%I:%M %p'")
+(defpoll date :interval "1s" "date '+%a %b %d'")
+
+;; Listening variables
+(deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get-workspaces.sh")
+(deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get-active-workspace.sh")
+(deflisten window :initial " NixOS " "bash ~/.config/eww/scripts/get-window-title.sh")
+

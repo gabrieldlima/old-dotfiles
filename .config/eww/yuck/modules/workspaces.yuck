@@ -1,0 +1,7 @@
+(defwidget workspaces []
+  (box :space-evenly true
+    (label :text "${workspaces}${current_workspace}" :visible false)
+    (for workspace in workspaces
+      (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
+        (box :class "workspaces ${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
+          (label :text "${workspace.id == 1 ? "一" : "${workspace.id == 2 ? "二" : "${workspace.id == 3 ? "三" : "${workspace.id == 4 ? "四" : "${workspace.id == 5 ? "五" : "${workspace.id == 6 ? "六" : "${workspace.id == 7 ? "七" : "${workspace.id == 8 ? "八" : "${workspace.id == 9 ? "九" : "〇"}"}"}"}"}"}"}"}"}"))))))

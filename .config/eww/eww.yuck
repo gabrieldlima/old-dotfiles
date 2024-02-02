@@ -1,0 +1,8 @@
+(include "yuck/variables.yuck")
+(include "yuck/windows.yuck")
+
+(include "yuck/modules/logo.yuck")
+(include "yuck/modules/workspaces.yuck")
+(include "yuck/modules/title.yuck")
+(include "yuck/modules/time.yuck")
+(include "yuck/modules/date.yuck")

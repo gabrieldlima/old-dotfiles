@@ -1,0 +1,5 @@
+(defwidget logo []
+  (box :class "logo"
+    (image :path "${EWW_CONFIG_DIR}/assets/nixos.png"
+           :image-width 24
+           :image-height 24)))

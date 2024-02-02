@@ -1,0 +1,49 @@
+;; ============================================================================
+;; Bar structure
+;; ============================================================================
+;; left side
+(defwidget leftBox []
+  (box :class "leftBox"
+       :halign "start"
+       :space-evenly false
+       (logo)
+       (title)))
+
+;; center
+(defwidget centerBox []
+  (box :class "centerBox"
+       :halign "center"
+       (workspaces)))
+
+;; right side
+(defwidget rightBox []
+  (box :class "rightBox"
+       :halign "end"
+       (date)
+       (time)))
+
+;; eww bar
+(defwidget eww []
+  (box :class "eww"
+       (leftBox)
+       (centerBox)
+       (rightBox)))
+
+
+;; ============================================================================
+;; EWW
+;; ============================================================================
+(defwindow bar
+  ;; Which monitor this window should be displayed on.
+  :monitor 0
+  ;; Geometry of the window.
+  :geometry (geometry :x "0%"
+                      :y "5px"
+                      :width "1910px"
+                      :height "30px"
+                      :anchor "top center")
+  ;; Where the window should appear in the stack. Possible values: fg, bg.
+  :stacking "bg"
+  ;; Whether the compositor should reserve space for the window automatically.
+  :exclusive true
+  (eww))

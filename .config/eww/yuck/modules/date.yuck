@@ -1,0 +1,3 @@
+(defwidget date []
+  (box :class "date"
+    (label :text "${date}")))
