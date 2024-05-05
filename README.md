@@ -1,3 +1,4 @@
+# ⚠️ This Repository is No Longer Maintained
 ### Programs I use:
 + **OS**: [arch linux](https://archlinux.org/)
 + **WM**: [bspwm](https://github.com/baskerville/bspwm)
