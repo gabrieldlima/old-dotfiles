@@ -1,4 +1,5 @@
-# ⚠️ This Repository is No Longer Maintained
+## ⚠️ I NO LONGER USE THIS SETUP. IF YOU WANT TO USE MY CONFIGURATION, GO TO THIS COMMIT [6168582](https://github.com/gabrieldlima/dotfiles/tree/616858233b2b9b22ac14d937bf3ab8018c8bc25c)
+
 ### Programs I use:
 + **OS**: [arch linux](https://archlinux.org/)
 + **WM**: [bspwm](https://github.com/baskerville/bspwm)
